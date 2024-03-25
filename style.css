@@ -134,3 +134,22 @@ body {
 .dormitory-supervisor {
     margin-top: 1200px;
 }
+.flex-wrap {
+    flex: wrap;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    border-radius: 20px;
+    background: url("./img/rtb.png"); 
+    background-size: cover;
+    height: 200px;
+    width: 27%;
+}
