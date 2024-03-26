@@ -2,14 +2,19 @@ body{
     padding: 80px;
 }
 
-.container-back p{
-    color: #0060AF;
-    font-size: 32px;
-    font-family: 'poppins', sans-serif;
+.container-back{
+    display: flex;
+    align-items: center;
 }
 
 .img-back{
-    
+    margin-right: 10px;
+}
+
+.back-text{
+    color: #0060AF;
+    font-size: 32px;
+    font-family: 'poppins', sans-serif;
 }
 
 .wrapper {
@@ -68,14 +73,15 @@ body{
     height: 50vh;
 }
 
-.ul-form{
-    height: 50vh;
-
+.footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.li-form{
-    list-style-type: none;
-    margin: 10px;
+.footer p {
+    color: #1F6198:
     
 }
 
