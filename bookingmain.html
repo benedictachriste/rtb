@@ -13,97 +13,71 @@
     <link rel="stylesheet" href="./bookingmain.css">
         <title>RTBLife - Home</title>
 </head>
+<script src="./bookingmain.js"></script>
 <body>
-    <div class="navbar d-flex w-100 text-primary align-center bg-white text-primary">
-        <div class="brand"><h2>BCA</h2></div>
-        <div class="menu text-right"><ul>
-            <li>Facilities</li>
-            <li>Login</li>
-        </ul></div>
-    </div>
-    <div class="wrapper-full">
-        <h1 class="text-title">BOOKING</h1>
-        <hr>
-        <div class="card-wrapper">
-            <div class="card">
-                <p></p>
-                <button class="btn"></button>
+    <div class="container wrapper-full">
+        <div class="container-content">
+            <h1 class="text-title">COMPLAIN</h1>
+            <hr>
+            <div>
+                <label for="Name">Name</label>
+                <br>
+                <input type="text" id="name" required>
             </div>
-            <div class="card">
-                <p></p>
-                <button class="btn"></button>
+            <div>
+                <!-- dropdown -->
+                <label for="Class">Class</label>
+                <br>
+                <input type="text">
             </div>
-            <div class="card">
-                <p></p>
-                <button class="btn"></button>
+            <div>
+                <label for="Facility Reported">Facility Reported</label>
+                <br>
+                <input type="text">
             </div>
-            <div class="card">
-                <p></p>
-                <button class="btn"></button>
+            <div>
+                <label for="Location">Location</label>
+                <br>
+                <input type="text" required>
             </div>
-            <div class="card">
-                <p></p>
-                <button class="btn"></button>
+            <div class="des">
+                <label for="Description">Description</label>
+                <br>
+                <input type="text">
             </div>
-            <div class="card">
-                <p></p>
-                <button class="btn"></button>
+            <div>
+                <button class="addf" onclick="popup()">
+                    <img src="./img/octicon_upload-16.png" alt="" class="addfimg">
+                    <label>Add File</label>
+                </button>
+                <div class="overlay" id="overlay">
+                    <div class="popup">
+                        <div class="popupcontent">
+                            <div class="dropimg dashed-border">
+                                <img src="" alt="">
+                                <p>Drop your image here, or browse</p>
+                                <p>Supports: PNG, JPG, JPEG, WEBP</p>
+                            </div>
+                            <div class="orline">
+                                <!-- <hr> -->
+                                <p>or</p>
+                                <!-- <hr> -->
+                            </div>
+                            <div class="import dashed-border">
+                                <label for="">Import from URL</label>
+                                <input type="file" id="file" accept="image">
+                            </div>
+                            <div>
+                                <button onclick="closepopup()">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <p></p>
-                <button class="btn"></button>
+            <div>
+                <!-- hover -->
+                <button class="addf sub">Submit</button>
             </div>
-            <div class="card">
-                <p></p>
-                <button class="btn"></button>
-            </div>
-            <div class="card">
-                <p></p>
-                <button class="btn"></button>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <h1 class="text-title">COMPLAIN</h1>
-        <hr>
-        <div>
-            <label for="Name">Name</label>
-            <br>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-            <!-- dropdown -->
-            <label for="Class">Class</label>
-            <br>
-            <input type="text">
-        </div>
-        <div>
-            <label for="Facility Reported">Facility Reported</label>
-            <br>
-            <input type="text">
-        </div>
-        <div>
-            <label for="Location">Location</label>
-            <br>
-            <input type="text">
-        </div>
-        <div class="des">
-            <label for="Description">Description</label>
-            <br>
-            <input type="text">
-        </div>
-        <div>
-            <label for="Add File">Add File</label>
-            <br>
-            <button class="addf">
-                <img src="./img/octicon_upload-16.png" alt="" class="addfimg">
-                <label>Add File</label>
-            </button>
-        </div>
-        <div>
-            <!-- hover -->
-            <button class="addf sub">Submit
-            </button>
         </div>
     </div>
 </body>
