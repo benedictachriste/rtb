@@ -147,6 +147,11 @@ textarea {
     height: 40px;
 }
 
+.log{
+    color: rgb(189, 43, 72);
+    font-size: small;
+}
+
 
 .footer{
     width: 100%;

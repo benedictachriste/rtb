@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="booking.css"/>
+    <script src="./booking.js" defer></script>
 </head>
 <body>
     <div class="container-back">
@@ -29,43 +30,49 @@
     <div class="calender">
 
     </div>
+    
     <div class="wrapper-bookform">
-        <div>
-            <label for="Name">Person Responsible</label>
-            <br>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-            <!-- dropdown -->
-            <label for="Class">Class/Organization</label>
-            <br>
-            <input type="text" >
-        </div>
-        <div>
-            <label for="Facility Reported">Number of Attendees</label>
-            <br>
-            <input type="text">
-        </div>
-        <div>
-            <label for="Location">Day and Date</label>
-            <br>
-            <input type="date">
-        </div>
-        <div class="des">
-            <label for="Description">Time [Enter time range, e.g., 21.00 - 23.00]</label>
-            <br>
-            <input type="time">
-        </div>
-        <div class="des">
-            <label for="Description">Purpose</label>
-            <br>
-            <textarea></textarea>
-        </div>
-        <div>
-            <!-- hover -->
-            <button class="addf sub">Submit
-            </button>
-        </div>
+        <form action="" class="" id="form">
+            <div>
+                <label for="Name">Person Responsible</label>
+                <br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <!-- dropdown -->
+                <label for="Class">Class/Organization</label>
+                <br>
+                <input type="text" >
+            </div>
+            <div>
+                <label for="Facility Reported">Number of Attendees</label>
+                <br>
+                <input type="text" id="number" name="NumberofAttendees" required>
+            </div>
+            <div>
+                <label for="Location">Day and Date</label>
+                <br>
+                <input type="date">
+            </div>
+            <div class="des">
+                <label for="Description">Time [Enter time range, e.g., 21.00 - 23.00]</label>
+                <br>
+                <input type="time">
+            </div>
+            <div class="des">
+                <label for="Description">Purpose</label>
+                <br>
+                <textarea></textarea>
+            </div>
+
+            <p class="log" id="error"></p>
+            
+            <div>
+                <!-- hover -->
+                <button class="addf sub">Submit
+                </button>
+            </div>
+        </form>
     </div>
 </body>
 <footer>

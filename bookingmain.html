@@ -17,33 +17,34 @@
 <body>
     <div class="container wrapper-full">
         <div class="container-content">
+            <!-- required -->
             <h1 class="text-title">COMPLAIN</h1>
             <hr>
             <div>
                 <label for="Name">Name</label>
                 <br>
-                <input type="text" id="name" required>
+                <input type="text" id="name" name="name" required>
             </div>
             <div>
                 <!-- dropdown -->
                 <label for="Class">Class</label>
                 <br>
-                <input type="text">
+                <input type="text" id="class" name="class" required>
             </div>
             <div>
                 <label for="Facility Reported">Facility Reported</label>
                 <br>
-                <input type="text">
+                <input type="text" id="facility" name="facility" required>
             </div>
             <div>
                 <label for="Location">Location</label>
                 <br>
-                <input type="text" required>
+                <input type="text" id="loc" name="loc" required>
             </div>
             <div class="des">
                 <label for="Description">Description</label>
                 <br>
-                <input type="text">
+                <input type="text" id="des" name="des" required>
             </div>
             <div>
                 <button class="addf" onclick="popup()">
@@ -53,22 +54,24 @@
                 <div class="overlay" id="overlay">
                     <div class="popup">
                         <div class="popupcontent">
-                            <div class="dropimg dashed-border">
-                                <img src="" alt="">
+                            <div class="dropimg mid dashed-border">
+                                <!-- drag drop -->
+                                <img src="./img/Vector.png" alt="">
                                 <p>Drop your image here, or browse</p>
-                                <p>Supports: PNG, JPG, JPEG, WEBP</p>
+                                <p class="support">Supports: PNG, JPG, JPEG, WEBP</p>
                             </div>
                             <div class="orline">
-                                <!-- <hr> -->
+                                <div class="line"></div>
                                 <p>or</p>
-                                <!-- <hr> -->
+                                <div class="line"></div>
                             </div>
-                            <div class="import dashed-border">
-                                <label for="">Import from URL</label>
-                                <input type="file" id="file" accept="image">
+                            <label for="import label">Import from URL</label>
+                            <div class="filebutton">
+                                <label for="addfile" class="addbutton">Add File URL</label>
+                                <input type="file" class="fileinput" accept="image">
                             </div>
                             <div>
-                                <button onclick="closepopup()">Done</button>
+                                <button class="sub addf done" onclick="closepopup()">Done</button>
                             </div>
                         </div>
                     </div>
