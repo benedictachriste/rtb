@@ -13,35 +13,28 @@ function closepopup(){
     document.getElementById("overlay").style.display="none";
 }
 
-const dropdowns=document.querySelectorAll('.dropdown');
 
-// loop through all dropdown elements
-dropdowns.forEach(dropdown =>{
-    // get inner elements for each dropdown
-    const select=dropdown.querySelector('.select');
-    const caret=dropdown.querySelector('.caret');
-    const menu=dropdown.querySelector('.menu');
-    const options=dropdown.querySelectorAll('.menu li');
-    const selected=dropdown.querySelector('.select');
-
-    // add a click event to select element
-    select.addEventListener('click',() => {
-        select.classList.toggle('select-clicked');
-        caret.classList.toggle('caret-rotate');
-        menu.classList.toggle('menu-open');
+document.addEventListener("DOMContentLoaded", function() {
+    var toggle = document.getElementById("dropdown-toggle");
+    var options = document.querySelectorAll(".dropdown-option");
+  
+    toggle.addEventListener("click", function() {
+      var dropdownOptions = document.getElementById("dropdown-options");
+      dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block";
     });
-
-    options.forEach(option => {
-        option.addEventListener('click',( )=> {
-            selected.innerText=option.innerText;
-            select.classList.remove('select-clicked');
-            caret.classList.remove('caret-rotate');
-            menu.classList.remove('menu-open');
-            // options.forEach(option =>{
-            //     option.classList.remove('active');
-            // });
-        });
-        option.classList.add('active');
-    })
-});
-
+  
+    options.forEach(function(option) {
+      option.addEventListener("click", function() {
+        toggle.textContent = option.textContent;
+        document.getElementById("dropdown-options").style.display = "none";
+      });
+    });
+  
+    window.addEventListener("click", function(event) {
+      if (!document.getElementById("dropdown-toggle").contains(event.target)) {
+        document.getElementById("dropdown-options").style.display = "none";
+      }
+    });
+  });
+  
+  

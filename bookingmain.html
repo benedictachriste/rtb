@@ -18,6 +18,7 @@
     <div class="container wrapper-full">
         <div class="container-content">
             <!-- required -->
+            <form action="" method="post">
             <h1 class="text-title">COMPLAIN</h1>
             <hr>
             <div>
@@ -30,22 +31,23 @@
                 <label for="Class">Class</label>
                 <br>
                 <div class="dropdown">
-                    <div class="select">
-                        <img src="./img/vectorcaret.png" class="caret" alt="">
+                    <div class="dd">
+                        <button id="dropdown-toggle" class="dropdown-toggle">Select your class</button>
+                        <img src="./img/vectorcaret.png" class="caret"></i>
                     </div>
-                    <ul class="menu">
-                        <li>PPBP 3</li>
-                        <li>PPBP 4</li>
-                        <li>PPTI 14</li>
-                        <li>PPTI 15</li>
-                        <li>PPTI 16</li>
-                        <li>PPBP 5</li>
-                        <li>PPBP 6</li>
-                        <li>PPTI 17</li>
-                        <li>PPTI 18</li>
-                        <li>PPTI 19</li>
-                    </ul>
-                </div>
+                    <div id="dropdown-options" class="dropdown-options">
+                      <button class="dropdown-option">PPBP 3</button>
+                      <button class="dropdown-option">PPBP 4</button>
+                      <button class="dropdown-option">PPTI 14</button>
+                      <button class="dropdown-option">PPTI 15</button>
+                      <button class="dropdown-option">PPTI 16</button>
+                      <button class="dropdown-option">PPBP 5</button>
+                      <button class="dropdown-option">PPBP 6</button>
+                      <button class="dropdown-option">PPTI 17</button>
+                      <button class="dropdown-option">PPTI 18</button>
+                      <button class="dropdown-option">PPTI 19</button>
+                    </div>
+                  </div> 
             </div>
             <div>
                 <label for="Facility Reported">Facility Reported</label>
@@ -94,7 +96,8 @@
                 </div>
             </div>
             <div>
-                <button class="addf sub">Submit</button>
+                <button type="submit"class="addf sub">Submit</button>
+            </form>
             </div>
         </div>
     </div>
