@@ -1,150 +1,21 @@
-.navbar {
-    height: 120px;
-}
-
-.d-flex {
-    display: flex;
-}
-
-.flex-direction-column {
-    flex-direction: column;
-}
-
-.flex-direction-row {
-    flex-direction: row;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.w-100 {
-    width: 100vw;
-}
-
-.bg-primary {
-    background-color: #0060AF;
-}
-
-.bg-white {
-    background-color: white;
-}
-
-.text-primary {
-    color: #0060AF;
-}
-
-.d-inline {
-    display: inline;
-}
-.text-right {
-    text-align: right;
-}
-
-.brand {
-    padding: 0 20px;
-    width: 30vw;
-}
-.menu {
-    width: 70vw;
-}
-
-.menu ul li{
-    display: inline;
-    padding-right: 40px;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.overlay {
-    width: 50vw;
-}
-.overlay-black {
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* overflow-x: hidden; */
-}
-
-.wrapper {
-    background: url("./img/rtb.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-}
-.title {
-    font-weight: 800;
-    padding:10px 20px;
-    padding-left: 40px;
-    font-size: 80px;
-
-}
-.text-white {
-    color: white;
-}
-.bg-cyan {
-    background-color: #DFEDF5;
-}
-.about {
-    height: 400px;
-}
-.text-center {
-    text-align: center;
-}
-.p-10 {
-    padding: 40px;
-    padding-top: 0;
-}
-
-.about {
-    position: relative;
-    z-index: 3;
-}
-
-.about h2 {
-    font-size: 45px;
-}
-.about p {
-    font-size: 25px;
-}
-
-.maps {
-    top: 300px;
-    position: absolute;
-    z-index: 3;
-}
-
-.ellipse-1 {
-    top: 1500px;
-    position: absolute;
-    z-index: 2;
-    right: -250px;
-}
-.dormitory-supervisor {
-    margin-top: 1200px;
-}
-.flex-wrap {
-    flex: wrap;
-}
-
 .card-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100vw;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
     overflow: hidden;
     width: 100%;
     height: 100%;
+    margin-top: 6vh;
+    margin-bottom: 8vh;
 }
 
 .card {
+    /* margin: 3vh; */
+    position : relative;
+    display : flex;
+    flex-direction : column;  
     background-repeat: no-repeat;
     background-size: cover;
     height: 259px;
@@ -163,20 +34,35 @@
     box-shadow: 6px 7px 7.6px rgba(0, 0, 0, 0.25);
 }
 
-.name{
-    margin-top: 170px;
-    margin-left: 30px;
+.name p{
+    position: absolute;
+    top: 18vh;
+    left: 2vw;
+    max-width: 20vw;
 }
 
-.name p{
-    margin-bottom: 10px;
+.sergun p{
+    position: absolute;
+    top: 13.7vh;
+    left: 2vw;
+    max-width: 20vw;
+}
+
+.buttonWrap {
+   position : absolute;
+}
+
+.booknowbutt {
+    position : absolute;
+    top : 27vh;
+    left : 2vw;
 }
 
 .card button{
-    position : absolute;
+    z-index : 1;
     border-radius: 25px;
     background-color: white;
-    border: none;
+    border: none;   
     width: 130px;
     height: 32px;
     margin-top: -50px;
@@ -184,7 +70,10 @@
 
 .booknowbutt p{
     position : absolute;
-    left : 41.3vw;
+    left : 19px;
+    z-index : 2;
+    width : 100px;
+    height : 100px;    
     color: black;
     font-weight: 600;
     text-shadow: none;
