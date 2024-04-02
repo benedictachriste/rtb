@@ -7,17 +7,20 @@
 
 function popup() {
     document.getElementById("overlay").style.display="block";
+    document.querySelector("body").classList.add("body-no-scroll")
 }
 
 function closepopup(){
     document.getElementById("overlay").style.display="none";
+    document.querySelector("body").classList.remove("body-no-scroll")
 }
 
 
 document.addEventListener("DOMContentLoaded", function() {
     var toggle = document.getElementById("dropdown-toggle");
     var options = document.querySelectorAll(".dropdown-option");
-  
+    var toggleText = document.querySelector(".dropdown-text");
+
     toggle.addEventListener("click", function() {
       var dropdownOptions = document.getElementById("dropdown-options");
       dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block";
@@ -25,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     options.forEach(function(option) {
       option.addEventListener("click", function() {
-        toggle.textContent = option.textContent;
+        toggleText.textContent = option.textContent;
         document.getElementById("dropdown-options").style.display = "none";
       });
     });
