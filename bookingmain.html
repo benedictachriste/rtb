@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./bookingmain.css">
         <title>RTBLife - Home</title>
 </head>
-<script src="./bookingmain.js"></script>
 <body>
     <div class="wrapper-full">
         <div class="container-contentmain">
@@ -207,29 +206,32 @@
                         <label>Add File</label>
                     </button>
                     <div class="overlay" id="overlay">
-                        <div class="popup">
-                            <div class="popupcontent">
-                                <div class="dropimg mid dashed-border">
-                                    <!-- drag drop -->
-                                    <img class="imgvector" src="./img/vectorimg.png" alt="">
-                                    <p>Drop your image here, or browse</p>
-                                    <p class="support">Supports: PNG, JPG, JPEG, WEBP</p>
+                        <label for="input-file" id="drop-area">
+                            <div id="popupcontent">
+                                <!-- drag drop -->
+                                <input type="file" accept="image/*" id="input-file" class="fileInput" hidden>
+                                <div id="img-view">
+                                    <div id="imgcontent">
+                                        <img id="imgvector" src="./img/vectorimg.png" alt="icon image">
+                                        <p>Drop your image here, or browse</p>
+                                        <p id="support">Supports: PNG, JPG, JPEG, WEBP</p>
+                                    </div>
                                 </div>
                                 <div class="orline">
                                     <div class="line"></div>
                                     <p>or</p>
                                     <div class="line"></div>
                                 </div>
-                                <label for="import label">Import from URL</label>
+                                <label for="import label">Import from device</label>
                                 <div class="filebutton">
                                     <label for="addfile" class="addbutton" id="addfileurl">Add File URL</label>
-                                    <input type="file" class="fileinput" accept="image">
+                                    <input type="file" class="fileInput" accept="image">
                                 </div>
                                 <div class="buttonDone">
                                     <button class="sub addf done" onclick="closepopup()">Done</button>
                                 </div>
                             </div>
-                        </div>
+                        </label>
                     </div>
                 </div>
                 <div>
@@ -245,5 +247,6 @@
             <p>All Right Reserved</p>
         </div>
     </footer>
+<script src="./bookingmain.js" defer></script>
 </body>
 </html>
