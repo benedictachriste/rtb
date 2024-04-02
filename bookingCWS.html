@@ -12,10 +12,12 @@
     <script src="./booking.js" defer></script>
 </head>
 <body>
-    <div class="container-back">
-        <img src="./img/vectorback.png" class="img-back"/>
-        <p class="back-text">BACK</p>
-    </div>
+    <a href="bookingmain.html">
+        <div class="container-back">
+            <img src="./img/vectorback.png" class="img-back"/>
+            <p class="back-text">BACK</p>
+        </div>
+    </a>
     <div class="wrapper d-flex justify-content-center">
         <div class="container-cws d-flex align-center justify-content-center">
             <div class="fashum-text">
@@ -42,7 +44,7 @@
                 <!-- dropdown -->
                 <label for="Class">Class/Organization</label>
                 <br>
-                <input type="text" >
+                <input type="text" required>
             </div>
             <div>
                 <label for="Facility Reported">Number of Attendees</label>
@@ -52,12 +54,12 @@
             <div>
                 <label for="Location">Day and Date</label>
                 <br>
-                <input type="date">
+                <input type="date" required>
             </div>
             <div class="des">
                 <label for="Description">Time [Enter time range, e.g., 21.00 - 23.00]</label>
                 <br>
-                <input type="time">
+                <input type="time" required>
             </div>
             <div class="des">
                 <label for="Description">Purpose</label>
