@@ -6,15 +6,18 @@ html, body, *{
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(227, 239, 246, 100%), rgba(255, 255, 255, 100%));
 }
 
 .card-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: last baseline;
+    align-items: center;
     padding-left: 4.35rem;
     gap: 1rem;
+    margin-top: 5rem;
     margin-bottom: 10rem;
 }
 

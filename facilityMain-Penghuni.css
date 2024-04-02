@@ -1,0 +1,85 @@
+html, body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(227, 239, 246, 100%), rgba(255, 255, 255, 100%));
+}
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: last baseline;
+    align-items: center;
+    padding-left: 4.35rem;
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.container{
+    width: 245px;
+    height: 295px;
+    overflow: hidden;
+    position: relative;
+    font-family: 'poppins', 'sans-serif';
+    
+}
+
+.container img{
+    width: 245px;
+    height: 295px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.facility-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 3px 4px 5.3px rgba(0, 0, 0, 100%);
+    font-size: 26px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.container-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.container:hover .facility-name{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container:hover img{
+    transform: scale(1.06);
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+.footer p {
+    color: #1F6198;
+    margin: 10px;
+}
