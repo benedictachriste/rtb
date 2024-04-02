@@ -1,7 +1,12 @@
+.relative{
+    position: relative;
+    overflow: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    
 }
 
 a {
@@ -11,9 +16,9 @@ a {
 .navbar {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 12vh;
-    /* justify-content: space-around; */
+    width: 100vw;
+    height: 6vw;
+    /* justify-content: space-evenly; */
     background-color: #EEF7FC;
     position: fixed;
     z-index: 5;
@@ -22,10 +27,14 @@ a {
 .logo {
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 30vw;
     margin-left: 0vw;
     justify-content: space-around;
     overflow: hidden;
+}
+
+.home{
+    width: 3vw;
 }
 
 .menu {
@@ -56,11 +65,10 @@ a {
 }
 
 .wrapper {
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 50vw;
     display: flex;
     flex-direction: row;
-    margin-top: 12vh;
     background: url("./img/building.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,7 +80,6 @@ a {
     display: flex;
     align-items: center;
     width: 50vw;
-    height: 100vh;
     background-color:rgba(0, 0, 0, 0.2);
 }
 
@@ -80,15 +87,15 @@ a {
     color: #FEF5EC;
     font-family: "Outfit", sans-serif;
     font-weight: 800;
-    padding:0px 20px;
-    padding-left: 40px;
-    font-size: 13vh;
+    padding:0px 1vw;
+    padding-left: 2vw;
+    font-size: 8vw;
 }
 
 .about{
     background-color: #DFEDF5;
     flex-direction: row;
-    height: 100vh;
+    height: 50vw;
     align-items: center;
 }
 
@@ -96,9 +103,9 @@ a {
     text-align: center;
     font-family: "Outfit", sans-serif;  
     color: #0060AF;
-    font-size: 5vh;
+    font-size: 3vw;
     font-weight: 700;
-    padding-top: 3vh;
+    padding-top: 2.5vw;
 }
 
 .desc-wrap{
@@ -109,17 +116,17 @@ a {
 
 .about p{
     padding: 8vw;
-    padding-top: 3vh;
+    padding-top: 1.5vw;
     font-family: "Outfit", sans-serif;
     text-align: justify;
     font-weight: 500;
-    font-size: 3.5vh;
+    font-size: 2vw;
 }
 
 .map-wrap {
-    width: 100%;
-    height: 0vh;
-    padding-top: 30vh;
+    width: 100vw;
+    height: 0vw;
+    padding-top: 15vw;
 }
 
 .map-wrap a{
@@ -138,10 +145,10 @@ a {
 }
 
 .ellipse-1 {
-    top: 180vh;
+    top: 90vw;
     position: absolute;
     z-index: 2;
-    right: -250px;
+    right: -15vw;
 }
 
 .ellipse-1 img{
@@ -149,11 +156,11 @@ a {
 }
 
 .dormitory-supervisor {
-    margin-top: 20vh;
-    margin-left: 5vh;
+    margin-top: 15vw;
+    margin-left: 5vw;
     font-family: "Outfit", sans-serif;  
     color: #0060AF;
-    font-size: 2.5vh;
+    font-size: 1.5vw;
     font-weight: 700;
 }
 
@@ -172,10 +179,10 @@ a {
 }
 
 .ellipse-2 {
-    top: 290vh;
+    top: 150vw;
     position: absolute;
     z-index: 2;
-    left: -250px;
+    left: -20vw;
 }
 
 .ellipse-2 img{
@@ -185,7 +192,7 @@ a {
 .article{
     background-color: #DFEDF5;
     flex-direction: row;
-    height: 100vh;
+    height: auto;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -195,14 +202,15 @@ a {
     text-align: center;
     font-family: "Outfit", sans-serif;  
     color: #0060AF;
-    font-size: 5vh;
+    font-size: 3vw;
     font-weight: 700;
     padding-top: 4vh;
 }
 
 .wrap-article{
     display: flex;
-    margin-top: 3vh;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
 }
 
 .wrap-article > div{
@@ -216,31 +224,30 @@ a {
 
 .article1{
     width: 25vw;
-    height: 31vh;
+    height: 17vw;
     border-radius: 24px;
     background-color: #F2F2F2;
-    padding: 24px;
+    padding: 1.5vw;
     flex-direction: column;
-    margin-bottom: 5vh; 
-    box-shadow: rgba(0, 0, 0, 0.2);
+    margin-bottom: 2.5vw; 
     z-index: 0;
 }
 
 .article2{
     width: 25vw;
-    height: 31vh;
+    height: 17vw;
     border-radius: 24px;
     background-color: #F2F2F2;
-    padding: 24px;
+    padding: 1.5vw;
     flex-direction: column;
+    margin-bottom: 2.5vw;   
     z-index: 0;
 }
 
 .photo{
     width: 25vw;
-    height: 23vh;
+    height: 13vw;
     border-radius: 16px;
-    margin-top: 2px;
     object-fit: cover;
     clip-path: inset(0,0);
 }
@@ -248,7 +255,7 @@ a {
 .article-title h3{
     font-family: "Outfit", sans-serif;  
     color: #0060AF;
-    font-size: 25px;
+    font-size: 1.5vw;
     text-decoration: none;
 }
 
@@ -260,14 +267,14 @@ a {
 .date h3{
     font-family: "Outfit", sans-serif;  
     color: #000000;
-    font-size: 15px;
+    font-size: 1vw;
     font-weight: 300;
     text-decoration: none;
 }
 
 .join{
-    width: 100%;
-    height: 80vh;
+    width: 100vw;
+    height: max-content;
 }
 
 .wrapper-join{
@@ -277,9 +284,9 @@ a {
 .divide{
     display: flex;
     flex-direction: column;
-    margin-top: 3vh;
+    margin-top: 1vw;
     margin-left: 3vw;
-    padding: 3vh;
+    padding: 2vw;
     width: 50%;
     z-index: 3;
 }
@@ -287,7 +294,7 @@ a {
 .divide h2{
     font-family: "Outfit", sans-serif;  
     color: #0060AF;
-    font-size: 5vh;
+    font-size: 3vw;
     font-weight: 700;
 }
 
@@ -296,7 +303,7 @@ a {
     font-family: "Outfit", sans-serif;
     text-align: justify;
     font-weight: 500;
-    font-size: 2.8vh;
+    font-size: 1.8vw;
     line-height: 1.5;
     margin-right: 7vw;
 }
@@ -308,19 +315,19 @@ a {
     margin-top: 3vw;
     border-radius: 24px;
     width: 15vw;
-    height: 8vh;
+    height: 4vw;
     background-color:#0060AF;
 }
 
 .button a{
     color: white;
     font-family: "Outfit", sans-serif;
-    font-size: large;
+    font-size: 1.6vw;
     font-weight: 700;
 }
 
 .ppbp{
-    margin-top: 5vh;
+    margin-top: 2.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -328,7 +335,7 @@ a {
 }
 
 .ppbp img{
-    width: 50vh;
+    width: 25vw;
     height: auto;
 }
 
@@ -338,7 +345,7 @@ a {
     font-family: "Outfit", sans-serif;
     text-align: justify;
     font-weight: 600;
-    font-size: 4vh;
+    font-size: 2.5vw;
     line-height: 1.5;
     color: #0060AF;
 }
@@ -351,7 +358,7 @@ a {
 }
 
 .ppti img{
-    width: 50vh;
+    width: 25vw;
     height: auto;
     margin-right: 5vw;
 }
@@ -361,7 +368,7 @@ a {
     font-family: "Outfit", sans-serif;
     text-align: justify;
     font-weight: 600;
-    font-size: 4vh;
+    font-size: 2.5vw;
     line-height: 1.5;
     color: #0060AF;
 }
@@ -376,5 +383,10 @@ a {
 
 .footer p {
     color: #1F6198;
+    font-size: 1.3vw;
     margin: 10px;
+}
+
+.footer img{
+    width: 5vw;
 }
