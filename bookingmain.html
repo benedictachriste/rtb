@@ -16,9 +16,11 @@
 <script src="./bookingmain.js"></script>
 <body>
     <div class="wrapper-full">
-        <div class="container-content">
+        <div class="container-contentmain">
             <h1 class="text-title">BOOKING</h1>
-            <hr>
+            <div class="garis">
+                <hr>
+            </div>
             <div class="card-wrapper">
                 <div class="card">
                     <img src="./img/comm1.png" alt="">
@@ -26,7 +28,7 @@
                         <p>COMMUNAL 1</p>
                     </div>
                     <div class="buttonWrap">
-                        <a class="book" href="bookingCWS.html">
+                        <a href="bookingCWS.html">
                             <div class="booknowbutt">
                                 <p>Book Now</p>
                                 <button class="btn"></button>
@@ -149,27 +151,27 @@
             </div>
         </div>
     </div>
-    <div class="container wrapper-full">
+    <div class="container">
         <div class="container-content">
             <form action="" method="post">
             <h1 class="text-title">COMPLAIN</h1>
             <hr>
-            <div>
+            <div class="distance">
                 <label for="Name">Name</label>
                 <br>
                 <input type="text" id="name" name="name" required>
             </div>
-            <div>
+            <div class="bedaSendiri">
                 <!-- dropdown -->
                 <label for="Class">Class</label>
                 <br>
                 <div class="dropdown">
                     <div class="dropdown">
                         <button id="dropdown-toggle" class="dropdown-toggle">Select your class</button>
-                        <img src="./img/vectorcaret.png" class="caret"></i>
+                        <!-- <img src="./img/vectorcaret.png" class="caret"></i> -->
                     </div>
                     <div id="dropdown-options" class="dropdown-options">
-                      <button class="dropdown-option">PPBP 3</button>
+                      <button class="dropdown-option bp3">PPBP 3</button>
                       <button class="dropdown-option">PPBP 4</button>
                       <button class="dropdown-option">PPTI 14</button>
                       <button class="dropdown-option">PPTI 15</button>
@@ -178,26 +180,26 @@
                       <button class="dropdown-option">PPBP 6</button>
                       <button class="dropdown-option">PPTI 17</button>
                       <button class="dropdown-option">PPTI 18</button>
-                      <button class="dropdown-option">PPTI 19</button>
+                      <button class="dropdown-option ti19">PPTI 19</button>
                     </div>
                 </div> 
             </div>
-            <div>
+            <div class="distance">
                 <label for="Facility Reported">Facility Reported</label>
                 <br>
                 <input type="text" id="facility" name="facility" required>
             </div>
-            <div>
+            <div class="distance">
                 <label for="Location">Location</label>
                 <br>
                 <input type="text" id="loc" name="loc" required>
             </div>
-            <div>
+            <div class="distance">
                 <label for="Description">Description</label>
                 <br>
                 <input type="text" id="des" name="des" required>
             </div>
-            <div>
+            <div class="distance">
                 <button class="addf" onclick="popup()">
                     <img src="./img/vectorupload.png" alt="" class="addfimg">
                     <label>Add File</label>
@@ -218,10 +220,10 @@
                             </div>
                             <label for="import label">Import from URL</label>
                             <div class="filebutton">
-                                <label for="addfile" class="addbutton">Add File URL</label>
+                                <label for="addfile" class="addbutton" id="addfileurl">Add File URL</label>
                                 <input type="file" class="fileinput" accept="image">
                             </div>
-                            <div>
+                            <div class="buttonDone">
                                 <button class="sub addf done" onclick="closepopup()">Done</button>
                             </div>
                         </div>
@@ -229,10 +231,17 @@
                 </div>
             </div>
             <div>
-                <button type="submit"class="addf sub">Submit</button>
-            </form>
+                <button type="submit"class="addf sub" id="submit">Submit</button>
             </div>
+            </form>
         </div>
     </div>
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2020</p>
+            <img src="./img/logoBCA.png" class="footer-img"/>
+            <p>All Right Reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
