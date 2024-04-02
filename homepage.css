@@ -64,6 +64,11 @@ a {
     height: auto;
 }
 
+.fade{
+    width: 100vw;
+    height: 50vw;
+}
+
 .wrapper {
     width: 100vw;
     height: 50vw;
@@ -74,11 +79,34 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     image-rendering: pixelated;
+    animation: fadeInOut 3s infinite alternate;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+
+
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
 }
 
 .title{
     display: flex;
     align-items: center;
+    position: absolute;
+    top:0vw;
+    height: 50vw;
     width: 50vw;
     background-color:rgba(0, 0, 0, 0.2);
 }
