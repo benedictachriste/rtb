@@ -4,7 +4,152 @@ body {
     font-family: "Outfit", sans-serif;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 6vw;
+    /* justify-content: space-evenly; */
+    background-color: #EEF7FC;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    margin-left: 0vw;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.home{
+    width: 3vw;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    justify-content: space-around;
+    margin-right: 0vw;
+}
+
+.menu a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #0060AF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.logo-BCA {
+    width: 15vw;
+    height: auto;
+}
+
+.menu img{
+    width: 2vw;
+    height: auto;
+}
+
+.notif-icon{
+    cursor: pointer;
+}
+
+.slide-menu {
+    z-index: 1;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0 0 0 35px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 60px;
+    right: -350px; 
+    /* right: -400px;  */
+    /* to hid the slide menu */
+    width: 350px;
+    /* width: 400px; */
+    height: 430px; 
+    /* height: 480px;  */
+    background-color: #DFEDF5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto; 
+    /* to enable scroll */
+  } 
+  
+  
+  .menuwrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 2vw;
+    color: #0060AF;
+    font-weight: 600;
+    font-size: 10px
+    /* font-size: 12px */
+  }
+  
+  .menuwrapper h2{
+    font-size: 2.2em;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .slide-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .slide-menu ul li {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    /* justify-content: center; */
+  }
+
+  .slide-menu li{
+    align-items: center;
+  }
+  
+  .slide-menu ul li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  .notification-content {
+    flex: 1;
+    font-size: 1.25em;
+  }
+
+  .notification-content p{
+    margin: 0 auto;
+  }
+  
+  .notification-date {
+    font-size: 	0.9375em;
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  .notifdivider{
+    width: 100%;
+    border-color: #0060AF;
+  } 
+
 
 .body-no-scroll {
     overflow: hidden;
@@ -15,6 +160,7 @@ body {
     width: 100vw;
     height: auto;
     margin-bottom: 6vh;
+    margin-top: 10vh;
 }
 
 
@@ -80,7 +226,6 @@ body {
     border-radius: 12px;
     z-index: -1;
     position: absolute;
-    /* width: 100%; */
     border-radius: 12px;
     box-shadow: 6px 7px 7.6px rgba(0, 0, 0, 0.25);
 }
@@ -108,7 +253,6 @@ body {
     position: absolute;
     top: 18vh;
     left: 2vw;
-    max-width: 20vw;
 }
 
 .buttonWrap {
@@ -125,7 +269,6 @@ body {
     position : absolute;
     left : 16px;
     bottom: -88px;
-    z-index : 2;
     width : 100px;
     height : 100px;    
     color: black;
@@ -202,7 +345,7 @@ form > div:last-of-type {
     
 }
 
-.popup{
+#drop-area{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -210,7 +353,7 @@ form > div:last-of-type {
     background-color: white;
     border-radius: 48px;
     width: 50%;
-    height:60%;
+    height: 70%;
     box-shadow: 5px 5px 19px rgba(0, 0, 0, 0.25);
     align-items: center;
     justify-content: center;
@@ -218,49 +361,53 @@ form > div:last-of-type {
     flex-direction: row;
 }
 
-.popupcontent{
+#popupcontent{
     width: 90%;
     height: 85%;
 }
 
-.dropimg{
+#img-view{
     padding: 3%;
-}
-
-.imgvector{
-    width: auto;
-}
-
-.mid{
+    height: 54%;
+    width: 94%;
+    background-size: cover;
     justify-content: space-evenly;
     align-items: center;
     display: flex;
     flex-direction: column;
+    border-width: 2px;
+    border-color: rgba(177, 191, 208, 1);
+    border-style: dashed;
+    border-radius: 24px;
+    border-spacing: 100px !important;
+    background-repeat: no-repeat;
+}
+
+#imgcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgvector{
+    width: 9vw;
+    height: 8vw;
+}
+
+#support{
+    color: #969DB2;
+    font-size: 15px !important;
 }
 
 .bedaSendiri {
     height : 70.3333333px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 .dropimg p{
     margin: 1px;
     font-size: 25px;
     font-weight: 300;
 }
-
-.support{
-    color: #969DB2;
-    font-size: 15px !important;
-}
-
-.dashed-border {
-    border-width: 2px;
-    border-color: rgba(177, 191, 208, 1);
-    border-style: dashed;
-    border-radius: 24px;
-    border-spacing: 100px !important;
-}
-
 
 .orline{
     display: flex;
@@ -284,7 +431,7 @@ form > div:last-of-type {
     flex-direction: column;
 }
 
-.fileinput {
+.fileInput {
     opacity: 0;
     width: 100% !important;
     height:40px !important;
@@ -314,14 +461,11 @@ form > div:last-of-type {
   }
 
   .buttonDone {
-    align-self: end;
-    position : absolute;
-    /* left : 28vw; */
+    float: right;
   }
 
 .dropdown {
     position: relative;
-    /* display: inline-block; */
     width: 100%;
     margin-bottom: 5px;
 }
@@ -374,8 +518,8 @@ form > div:last-of-type {
 }
 
 .caret{
-    width: 20px;
-    height: 18px;
+    width: 15px;
+    height: 12px;
     background-color: transparent;
 }
 
@@ -395,6 +539,11 @@ form > div:last-of-type {
 @media screen and (max-width: 650px){
     .overlay{
         z-index: 1;
+    }
+
+    .imgvector{
+        width: 15vw;
+        height: 15vw;
     }
 }
 

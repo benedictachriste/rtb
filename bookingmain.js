@@ -1,9 +1,3 @@
-// document.getElementById("openPopup").addEventListener("click", function(){
-    
-// });
-// document.getElementById("closePopup").addEventListener("click", function(){
-//     document.getElementById("overlay").style.display="none";
-// });
 
 function popup() {
     document.getElementById("overlay").style.display="block";
@@ -17,27 +11,65 @@ function closepopup(){
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    var toggle = document.getElementById("dropdown-toggle");
-    var options = document.querySelectorAll(".dropdown-option");
-    var toggleText = document.querySelector(".dropdown-text");
+  var toggle = document.getElementById("dropdown-toggle");
+  var options = document.querySelectorAll(".dropdown-option");
+  var toggleText = document.querySelector(".dropdown-text");
 
-    toggle.addEventListener("click", function() {
-      var dropdownOptions = document.getElementById("dropdown-options");
-      dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block";
-    });
-  
-    options.forEach(function(option) {
-      option.addEventListener("click", function() {
-        toggleText.textContent = option.textContent;
-        document.getElementById("dropdown-options").style.display = "none";
-      });
-    });
-  
-    window.addEventListener("click", function(event) {
-      if (!document.getElementById("dropdown-toggle").contains(event.target)) {
-        document.getElementById("dropdown-options").style.display = "none";
-      }
+  toggle.addEventListener("click", function() {
+    var dropdownOptions = document.getElementById("dropdown-options");
+    dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block";
+  });
+
+  options.forEach(function(option) {
+    option.addEventListener("click", function() {
+      toggleText.textContent = option.textContent;
+      document.getElementById("dropdown-options").style.display = "none";
     });
   });
-  
+
+  window.addEventListener("click", function(event) {
+    if (!document.getElementById("dropdown-toggle").contains(event.target)) {
+      document.getElementById("dropdown-options").style.display = "none";
+    }
+  });
+});
+
+
+const dropArea = document.getElementById("drop-area");
+const imageView = document.getElementById("img-view");
+const inputFile = document.querySelectorAll(".fileInput");
+const addFile = document.getElementById("addfileurl");
+
+
+inputFile.forEach(function (input) {
+  input.addEventListener("change", function () {
+    let imgLink = URL.createObjectURL(input.files[0]);
+    imageView.style.backgroundImage = `url(${imgLink})`;
+    imageView.textContent = "";
+    addFile.textContent = input.files[0].name;
+    imageView.style.border = 0;
+    imageView.style.backgroundPosition="center";
+  })
+});
+
+dropArea.addEventListener("dragover", function(e){
+  e.preventDefault();
+});
+
+dropArea.addEventListener("drop", function(e){
+  e.preventDefault();
+  inputFile[0].files=e.dataTransfer.files;
+  uploadImage();
+});
+
+function toggleSlideMenu() {
+  var slideMenu = document.getElementById('slideMenu');
+  if (slideMenu.style.right === "-400px") {
+      slideMenu.style.right = "0";
+      // document.querySelector("body").classList.add("body-no-scroll")
+    } else {
+      slideMenu.style.right = "-400px";
+      // document.querySelector("body").classList.remove("body-no-scroll")
+  }
+}
   
