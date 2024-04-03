@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Page</title>
+    <!-- Icon home -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,68 +15,69 @@
     <script src="./booking.js" defer></script>
 </head>
 <body>
-    <a href="bookingmain.html">
-        <div class="container-back">
-            <img src="./img/vectorback.png" class="img-back"/>
-            <p class="back-text">BACK</p>
-        </div>
-    </a>
-    <div class="wrapper d-flex justify-content-center">
-        <div class="container-cws d-flex align-center justify-content-center">
-            <div class="fashum-text">
-                <p>CO-WORKING SPACE</p>
+    <div class="relative">
+        <a href="bookingmain.html">
+            <div class="container-back">
+                <img src="./img/back.png"/>
+            </div>
+        </a>
+        <div class="wrapper d-flex justify-content-center">
+            <div class="container-cws d-flex align-center justify-content-center">
+                <div class="fashum-text">
+                    <p>CO-WORKING SPACE</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div>
-        <h1 class="text-month">Maret 2024</h1>
-        <hr class="horizontal-line">
-    </div>
-    
-    <div class="calender"></div>
-    
-    <div class="wrapper-bookform">
-        <form action="" class="" id="form">
-            <div>
-                <label for="Name">Person Responsible</label>
-                <br>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div>
-                <!-- dropdown -->
-                <label for="Class">Class/Organization</label>
-                <br>
-                <input type="text" required>
-            </div>
-            <div>
-                <label for="Number of Attendees">Number of Attendees</label>
-                <br>
-                <input type="text" id="number" name="NumberofAttendees" required>
-            </div>
-            <div>
-                <label for="Day and Date">Day and Date</label>
-                <br>
-                <input type="date" required>
-            </div>
-            <div class="des">
-                <label for="Time">Time [Enter time range, e.g., 21.00 - 23.00]</label>
-                <br>
-                <input type="time" required>
-            </div>
-            <div class="des">
-                <label for="Description">Purpose</label>
-                <br>
-                <textarea></textarea>
-            </div>
+        <div class="month-wrapper">
+            <h1 class="text-month">Maret 2024</h1>
+            <hr class="horizontal-line">
+        </div>
+        
+        <div class="calender"></div>
+        
+        <div class="wrapper-bookform">
+            <form action="" class="" id="form">
+                <div>
+                    <label for="Name">Person Responsible</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <!-- dropdown -->
+                    <label for="Class">Class/Organization</label>
+                    <br>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label for="Number of Attendees">Number of Attendees</label>
+                    <br>
+                    <input type="text" id="number" name="NumberofAttendees" required>
+                </div>
+                <div>
+                    <label for="Day and Date">Day and Date</label>
+                    <br>
+                    <input type="date" required>
+                </div>
+                <div class="des">
+                    <label for="Time">Time [Enter time range, e.g., 21.00 - 23.00]</label>
+                    <br>
+                    <input type="time" required>
+                </div>
+                <div class="des">
+                    <label for="Description">Purpose</label>
+                    <br>
+                    <textarea></textarea>
+                </div>
 
-            <p class="log" id="error"></p>
-            
-            <div>
-                <!-- hover -->
-                <button class="addf sub">Submit
-                </button>
-            </div>
-        </form>
+                <p class="log" id="error"></p>
+                
+                <div>
+                    <!-- hover -->
+                    <button class="addf sub">Submit
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 <footer>
