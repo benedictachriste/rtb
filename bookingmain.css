@@ -329,18 +329,7 @@ select{
     height: 20px;
 }
 
-form > div:last-of-type {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-}
 
-.sub{
-    background-color: #0060AF;
-    color: white;
-    height: 35px;
-    width: 120px;
-}
 
 .overlay{
     width: 100vw;
@@ -397,14 +386,32 @@ form > div:last-of-type {
     align-items: center;
 }
 
+#imgcontent p{
+    margin: 0;
+}
+
 #imgvector{
     width: 9vw;
     height: 8vw;
 }
 
 #support{
+    margin: 0;
     color: #969DB2;
     font-size: 15px !important;
+}
+
+form > div:last-of-type {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.sub{
+    background-color: #0060AF;
+    color: white;
+    height: 35px;
+    width: 120px;
 }
 
 .bedaSendiri {
@@ -530,6 +537,8 @@ form > div:last-of-type {
     height: 12px;
     background-color: transparent;
 }
+
+/* BATAS COPY FORM */
 
 .footer{
     width: 100%;
