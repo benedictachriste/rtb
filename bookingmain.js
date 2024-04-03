@@ -1,80 +1,126 @@
+// COPY JS NOTIF
+
+let slideMenu = document.getElementById("slideMenu")
+let notifIcon = document.querySelector(".notif-icon")
+notifIcon.addEventListener("click", function() {
+  if (slideMenu.style.right != "0px") {
+    slideMenu.style.right = "0"
+  } else {
+    slideMenu.style.right = "-25vw"
+  }
+})
+
+// BATAS JS NOTIF
 
 function popup() {
-    document.getElementById("overlay").style.display="block";
+    document.getElementById("overlay").style.display="block"
     document.querySelector("body").classList.add("body-no-scroll")
 }
 
 function closepopup(){
-    document.getElementById("overlay").style.display="none";
+    document.getElementById("overlay").style.display="none"
     document.querySelector("body").classList.remove("body-no-scroll")
 }
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  var toggle = document.getElementById("dropdown-toggle");
-  var options = document.querySelectorAll(".dropdown-option");
-  var toggleText = document.querySelector(".dropdown-text");
+  const toggle = document.getElementById("dropdown-toggle")
+  const options = document.querySelectorAll(".dropdown-option")
+  const toggleText = document.querySelector(".dropdown-text")
 
   toggle.addEventListener("click", function() {
-    var dropdownOptions = document.getElementById("dropdown-options");
-    dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block";
-  });
+    const dropdownOptions = document.getElementById("dropdown-options")
+    dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block"
+  })
 
   options.forEach(function(option) {
     option.addEventListener("click", function() {
-      toggleText.textContent = option.textContent;
-      document.getElementById("dropdown-options").style.display = "none";
-    });
-  });
+      toggleText.textContent = option.textContent
+      document.getElementById("dropdown-options").style.display = "none"
+    })
+  })
 
   window.addEventListener("click", function(event) {
     if (!document.getElementById("dropdown-toggle").contains(event.target)) {
       document.getElementById("dropdown-options").style.display = "none";
     }
-  });
-});
+  })
+})
 
 
-const dropArea = document.getElementById("drop-area");
-const imageView = document.getElementById("img-view");
-const inputFile = document.querySelectorAll(".fileInput");
-const addFile = document.getElementById("addfileurl");
+const dropArea = document.getElementById("drop-area")
+const imageView = document.getElementById("img-view")
+const inputFile = document.querySelectorAll(".fileInput")
+const addFile = document.getElementById("addfileurl")
 
 
 inputFile.forEach(function (input) {
   input.addEventListener("change", function () {
-    let imgLink = URL.createObjectURL(input.files[0]);
-    imageView.style.backgroundImage = `url(${imgLink})`;
-    imageView.textContent = "";
-    addFile.textContent = input.files[0].name;
-    imageView.style.border = 0;
-    imageView.style.backgroundPosition="center";
+    let imgLink = URL.createObjectURL(input.files[0])
+    imageView.style.backgroundImage = `url(${imgLink})`
+    imageView.textContent = ""
+    addFile.textContent = input.files[0].nam
+    imageView.style.border = 0
+    imageView.style.backgroundPosition="center"
   })
-});
-
-dropArea.addEventListener("dragover", function(e){
-  e.preventDefault();
-});
-
-dropArea.addEventListener("drop", function(e){
-  e.preventDefault();
-  inputFile[0].files=e.dataTransfer.files;
-  uploadImage();
-});
-
-
-// COPY JS NOTIF
-
-let slideMenu = document.getElementById('slideMenu');
-let notifIcon = document.querySelector('.notif-icon')
-notifIcon.addEventListener('click', function() {
-  if (slideMenu.style.right != "0px") {
-    slideMenu.style.right = "0";
-    // document.querySelector("body").classList.add("body-no-scroll")
-  } else {
-    slideMenu.style.right = "-25vw";
-    // document.querySelector("body").classList.remove("body-no-scroll")
-  }
 })
 
-// BATAS JS NOTIF
+dropArea.addEventListener("dragover", function(e){
+  e.preventDefault()
+})
+
+dropArea.addEventListener("drop", function(e){
+  e.preventDefault()
+  inputFile.files=e.dataTransfer.files
+  let imgLink = URL.createObjectURL(inputFile.files[0])
+  imageView.style.backgroundImage = `url(${imgLink})`
+  imageView.textContent = ""
+  addFile.textContent = inputFile.files[0].name
+  imageView.style.border = 0
+  imageView.style.backgroundPosition="center"
+})
+
+document.addEventListener("DOMContentLoaded", function() {
+  const submitButton = document.getElementById("submit")
+  submitButton.addEventListener("click", function(e){
+      e.preventDefault()
+
+      const nameEl = document.getElementById("name")
+      const facilityEl = document.getElementById("facility")
+      const locEl = document.getElementById("loc")
+      const desEl = document.getElementById("des")
+
+      const namee = nameEl.value
+      const facility = facilityEl.value
+      const loc = locEl.value
+      const des = desEl.value
+
+      const nameRegex = /^[a-zA-Z\s]*$/
+
+      let isValid = true
+
+      if(facility === "" || loc === "" || des === "" || namee == " "){
+        error.textContent = "Please fill in all fields"
+        error.style.display = "block"
+        isValid = false
+      }
+
+      if(isValid){
+        if(!nameRegex.test(namee)){
+          error.textContent = "Name should only contain characters within a-z, A-Z, and space"
+          error.style.display = "block"
+          isValid = false
+        }
+      }
+
+      if(isValid){
+        nameEl.value = ""
+        locEl.value = ""
+        desEl.value = ""
+        facilityEl.value = ""
+        error.textContent = "Your complain has been recorded"
+        error.style.color = "#0060AF"
+        error.style.display = "block"
+      }
+  })
+})

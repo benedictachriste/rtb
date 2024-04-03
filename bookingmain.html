@@ -14,8 +14,9 @@
         <title>RTBLife - Home</title>
 </head>
 <body>
+    <!-- COPY NAVBAR -->
+    <!-- COPY NAVBAR -->
     <header>
-        <!-- COPY NAVBAR -->
         <div class="relative">
             <div class="navbar">
                 <div class="logo">
@@ -29,15 +30,14 @@
                     <a href="Rules-Main.html">Rules</a>
                     <a href="facilityMain-Penghuni.html">Facilities</a>
                     <a href="./np-home.html">Logout</a>
-                    <div class="notif-icon">
+                    <div class="notif-icon" onclick="toggleSlideMenu()">
                         <img src="./img/Vector.png">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- BATAS COPY NAVBAR -->
     </header>
-
+    
     <div id="slideMenu" class="slide-menu">
         <div class="menuwrapper">
             <h2 class="notiftittle">Notifications</h2>
@@ -69,6 +69,8 @@
             </ul>
         </div>
     </div>
+    <!-- BATAS COPY NAVBAR -->
+    <!-- BATAS COPY NAVBAR -->
     
     <div class="wrapper-full">
         <div class="container-contentmain">
@@ -209,7 +211,8 @@
     <div class="container">
         <div class="container-content">
             <!-- COPY FORM -->
-            <form action="" method="post">
+            <!-- COPY FORM -->
+            <form id="form" method="post">
                 <h1 class="text-title">COMPLAIN</h1>
                 <hr>
                 <div>
@@ -224,7 +227,7 @@
                     <div class="dropdown">
                         <div class="dropdown">
                             <button id="dropdown-toggle" class="dropdown-toggle">
-                                <p>Select your class</p>  
+                                <p class="dropdown-text">Select your class</p>  
                                 <img src="./img/vectorcaret.png" class="caret"></img>
                             </button>
                         </div>
@@ -257,6 +260,7 @@
                     <br>
                     <input type="text" id="des" name="des" required>
                 </div>
+                <p id="error"></p>
                 <div>
                     <button class="addf" id="addf" onclick="popup()">
                         <img src="./img/vectorupload.png" alt="" class="addfimg">
@@ -295,6 +299,7 @@
                     <button type="submit"class="addf sub" id="submit">Submit</button>
                 </div>
             </form>
+            <!-- BATAS COPY FORM -->
             <!-- BATAS COPY FORM -->
         </div>
     </div>

@@ -5,9 +5,67 @@ html, body, *{
 }
 
 body{
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, rgba(227, 239, 246, 100%), rgba(255, 255, 255, 100%));
+    width: 100vw;
+    height: 100vh;
+}
+
+.relative{
+    position: relative;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 6vw;
+    /* justify-content: space-evenly; */
+    background-color: #EEF7FC;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    margin-left: 0vw;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.home{
+    width: 3vw;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    justify-content: space-around;
+    margin-right: 0vw;
+}
+
+.menu a {
+    font-size: 1.5vw;
+    color: #0060AF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.logo-BCA {
+    width: 15vw;
+    height: auto;
+}
+
+.menu img{
+    width: 2vw;
+    height: auto;
 }
 
 .card-wrapper{
@@ -81,5 +139,10 @@ body{
 
 .footer p {
     color: #1F6198;
+    font-size: 1.3vw;
     margin: 10px;
+}
+
+.footer img{
+    width: 5vw;
 }
