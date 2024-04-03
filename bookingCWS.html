@@ -42,11 +42,30 @@
                     <br>
                     <input type="text" id="name" name="name" required>
                 </div>
-                <div>
+                <div class="bedaSendiri">
                     <!-- dropdown -->
-                    <label for="Class">Class/Organization</label>
+                    <label for="Class">Class</label>
                     <br>
-                    <input type="text" required>
+                    <div class="dropdown">
+                        <div class="dropdown">
+                            <button id="dropdown-toggle" class="dropdown-toggle">
+                                <p class="dropdown-text">Select your class</p>  
+                                <img src="./img/vectorcaret.png" class="caret"></img>
+                            </button>
+                        </div>
+                        <div id="dropdown-options" class="dropdown-options">
+                        <button class="dropdown-option bp3">PPBP 3</button>
+                        <button class="dropdown-option">PPBP 4</button>
+                        <button class="dropdown-option">PPTI 14</button>
+                        <button class="dropdown-option">PPTI 15</button>
+                        <button class="dropdown-option">PPTI 16</button>
+                        <button class="dropdown-option">PPBP 5</button>
+                        <button class="dropdown-option">PPBP 6</button>
+                        <button class="dropdown-option">PPTI 17</button>
+                        <button class="dropdown-option">PPTI 18</button>
+                        <button class="dropdown-option ti19">PPTI 19</button>
+                        </div>
+                    </div> 
                 </div>
                 <div>
                     <label for="Number of Attendees">Number of Attendees</label>
@@ -63,18 +82,16 @@
                     <br>
                     <input type="time" required>
                 </div>
-                <div class="des">
-                    <label for="Description">Purpose</label>
+                <div>
+                    <label for="Description">Description</label>
                     <br>
-                    <textarea></textarea>
+                    <input type="text" id="des" name="des" required>
                 </div>
 
                 <p class="log" id="error"></p>
                 
                 <div>
-                    <!-- hover -->
-                    <button class="addf sub">Submit
-                    </button>
+                    <button type="submit"class="addf sub" id="submit">Submit</button>
                 </div>
             </form>
         </div>

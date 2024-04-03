@@ -76,7 +76,7 @@ a{
     color: #1F6198;
     font-weight: 500;
     margin-bottom: 2.5vw;
-    text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25)
+    text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
 }
 
 .horizontal-line {
@@ -124,12 +124,68 @@ input[type="time"]{
 
 }
 
-textarea {
-    background-color: rgb(250, 250, 252);
+.bedaSendiri {
+    height : 70.3333333px;
+    margin-bottom: 13px;
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+}
+    
+.dropdown-toggle {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
     border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+    height: 40px;
     display: flex;
-    width: 95vw;
-    height: 15vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+  
+.dropdown-options {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: none;
+    border-radius: 8px 8px 8px 8px;
+    width: 100%;
+}
+  
+.dropdown-option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.bp3{
+    border-radius: 8px 8px 0 0;
+}
+
+.ti19{
+    border-radius: 0 0 8px 8px;
+}
+  
+.dropdown-option:hover {
+    background-color: #f9f9f9;
+    filter: brightness(90%);
+}
+
+.caret{
+    width: 15px;
+    height: 12px;
+    background-color: transparent;
 }
 
 .des input[type=text] {
