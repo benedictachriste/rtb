@@ -7,6 +7,12 @@ body {
     overflow-x: hidden;
 }
 
+/* COPY NAVBAR */
+.relative{
+    position: relative;
+    overflow: hidden;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -145,6 +151,8 @@ body {
     border-color: #0060AF;
   } 
 
+/* BATAS COPY NAVBAR */
+
 
 .body-no-scroll {
     overflow: hidden;
@@ -161,7 +169,7 @@ body {
 
 .container{
     width: 100vw;
-    height: 45vw;
+    height: auto;
     margin: 0 0 auto;
     background-color: #DFEDF5;
 }
