@@ -12,9 +12,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="booking.css"/>
-    <script src="./booking.js" defer></script>
+    <script src="./bookingmain.js" defer></script>
 </head>
 <body>
+    <header>
+        <!-- COPY NAVBAR -->
+        <div class="relative">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
+                    <a href="homepage.html">
+                        <img src="./img/home icon.png" alt="home-icon" class="home">
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="bookingmain.html">Booking and Complain</a>
+                    <a href="Rules-Main.html">Rules</a>
+                    <a href="facilityMain-Penghuni.html">Facilities</a>
+                    <a href="./np-home.html">Logout</a>
+                    <div class="notif-icon" onclick="toggleSlideMenu()">
+                        <img src="./img/Vector.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BATAS COPY NAVBAR -->
+    </header>
+
+    <div id="slideMenu" class="slide-menu">
+        <div class="menuwrapper">
+            <h2 class="notiftittle">Notifications</h2>
+            <ul>
+                <li>
+                    <img src="./img/insidenotif.png" alt="Notification Icon">
+                    <div class="notification-content">
+                        <p>New rule has been updated.</p>
+                        <p class="notification-date">June 28, 2024</p>
+                    </div>
+                </li>
+                <hr class="notifdivider">
+                <li>
+                    <img src="./img/insidenotif.png" alt="Notification Icon">
+                    <div class="notification-content">
+                        <p>Your complain has been recorded.</p>
+                        <p class="notification-date">June 18, 2024</p>
+                    </div>
+                </li>
+                <hr class="notifdivider">
+                <li>
+                    <img src="./img/insidenotif.png" alt="Notification Icon">
+                    <div class="notification-content">
+                        <p>Your booking request has been approved.</p>
+                        <p class="notification-date">June 10, 2024</p>
+                    </div>
+                </li>
+                <hr class="notifdivider">
+            </ul>
+        </div>
+    </div>
+
     <div class="relative">
         <a href="bookingmain.html">
             <div class="container-back">
@@ -36,7 +92,7 @@
         <div class="calender"></div>
         
         <div class="wrapper-bookform">
-            <form action="" class="" id="form">
+            <form action="" class="form" id="form">
                 <div>
                     <label for="Name">Person Responsible</label>
                     <br>
