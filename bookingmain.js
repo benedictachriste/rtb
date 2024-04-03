@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
   options.forEach(function(option) {
     option.addEventListener("click", function() {
       toggleText.textContent = option.textContent
+      toggle.style.backgroundColor = "#E8F0FE"
       document.getElementById("dropdown-options").style.display = "none"
     })
   })
@@ -59,7 +60,7 @@ inputFile.forEach(function (input) {
     let imgLink = URL.createObjectURL(input.files[0])
     imageView.style.backgroundImage = `url(${imgLink})`
     imageView.textContent = ""
-    addFile.textContent = input.files[0].nam
+    addFile.textContent = input.files[0].name
     imageView.style.border = 0
     imageView.style.backgroundPosition="center"
   })
@@ -86,11 +87,17 @@ document.addEventListener("DOMContentLoaded", function() {
       e.preventDefault()
 
       const nameEl = document.getElementById("name")
+      const classEl = document.querySelector(".dropdown-text")
       const facilityEl = document.getElementById("facility")
       const locEl = document.getElementById("loc")
       const desEl = document.getElementById("des")
 
+
+      const toggle = document.getElementById("dropdown-toggle")
+
+
       const namee = nameEl.value
+      const className = classEl.textContent
       const facility = facilityEl.value
       const loc = locEl.value
       const des = desEl.value
@@ -101,8 +108,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
       if(facility === "" || loc === "" || des === "" || namee == " "){
         error.textContent = "Please fill in all fields"
+        error.style.color = "red"
         error.style.display = "block"
         isValid = false
+      }
+
+      if(isValid){
+        if(className == "Select your class"){
+          error.textContent = "Please select your class"
+          error.style.display = "block"
+          isValid = false
+        }
       }
 
       if(isValid){
@@ -117,6 +133,8 @@ document.addEventListener("DOMContentLoaded", function() {
         nameEl.value = ""
         locEl.value = ""
         desEl.value = ""
+        classEl.textContent = "Select your class"
+        toggle.style.backgroundColor = "white"
         facilityEl.value = ""
         error.textContent = "Your complain has been recorded"
         error.style.color = "#0060AF"
