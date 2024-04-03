@@ -8,3 +8,15 @@ function changeImage() {
 }
 
 setInterval(changeImage, 3000)
+
+
+function toggleSlideMenu() {
+    var slideMenu = document.getElementById('slideMenu');
+    if (slideMenu.style.right === "-30vw") {
+        slideMenu.style.right = "0";
+        // document.querySelector("body").classList.add("body-no-scroll")
+      } else {
+        slideMenu.style.right = "-30vw";
+        // document.querySelector("body").classList.remove("body-no-scroll")
+    }
+  }

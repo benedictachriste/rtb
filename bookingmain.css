@@ -7,6 +7,12 @@ body {
     overflow-x: hidden;
 }
 
+/* COPY NAVBAR */
+.relative{
+    position: relative;
+    overflow: hidden;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -65,18 +71,15 @@ body {
 .slide-menu {
     z-index: 1;
     font-family: "Poppins", sans-serif;
-    border-radius: 0 0 0 35px;
+    border-radius: 0 0 0 2vw;
     position: fixed;
     display: flex;
     justify-content: center;
-    top: 60px;
-    right: -350px; 
-    /* right: -400px;  */
+    top: 5vw;
+    right: -25vw; 
     /* to hid the slide menu */
-    width: 350px;
-    /* width: 400px; */
-    height: 430px; 
-    /* height: 480px;  */
+    width: 25vw;
+    height: 30vw; 
     background-color: #DFEDF5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease-in-out;
@@ -89,17 +92,16 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin-top: 2vw;
+    margin-top: 1vw;
     color: #0060AF;
     font-weight: 600;
-    font-size: 10px
-    /* font-size: 12px */
+    font-size: 0.65em;
   }
   
   .menuwrapper h2{
-    font-size: 2.2em;
-    margin-top: 25px;
-    margin-bottom: 5px;
+    font-size: 2.2vw;
+    margin-top: 1vw;
+    margin-bottom: 0.7vw;
   }
   
   .slide-menu ul {
@@ -112,12 +114,11 @@ body {
   }
   
   .slide-menu ul li {
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
+    padding-top: 1vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1vw;
     display: flex;
-    /* justify-content: center; */
   }
 
   .slide-menu li{
@@ -125,9 +126,9 @@ body {
   }
   
   .slide-menu ul li img {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1vw;
   }
   
   .notification-content {
@@ -150,6 +151,8 @@ body {
     border-color: #0060AF;
   } 
 
+/* BATAS COPY NAVBAR */
+
 
 .body-no-scroll {
     overflow: hidden;
@@ -166,11 +169,14 @@ body {
 
 .container{
     width: 100vw;
-    height: 600px;
+    height: auto;
     margin: 0 0 auto;
     background-color: #DFEDF5;
 }
 
+.container-contentmain {
+    margin: 8vh 5vw;
+}
 
 .container-content {
     margin: 3vh 5vw;
@@ -178,9 +184,10 @@ body {
     flex-direction: column;
 }
 
-.container-contentmain {
-    margin: 8vh 5vw;
+.container-content hr{
+    margin-bottom: 2vw;
 }
+
 
 .text-title{
     margin: 1.5vh 0vw;
@@ -293,13 +300,14 @@ input[type="text"],
 input[type="file"],
 select{
     width: 100%;
-    height: 30px;
+    height: 40px;
     border-radius: 8px;
     border: none;
     margin-bottom: 15px;
 }
 
 .addf{
+    margin-top: 1vw;
     border: none;
     box-shadow: 3px 4px 4.7px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
