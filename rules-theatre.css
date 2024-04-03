@@ -1,0 +1,231 @@
+.relative{
+    position: relative;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 95vh;
+    background-image: linear-gradient(#FCFFFF ,#DFEDF5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 6vw;
+    /* justify-content: space-evenly; */
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    margin-left: 0vw;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.home{
+    width: 3vw;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    justify-content: space-around;
+    margin-right: 0vw;
+}
+
+.menu a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #0060AF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.logo-BCA {
+    width: 15vw;
+    height: auto;
+}
+
+.menu img{
+    width: 2vw;
+    height: auto;
+}
+
+.notif-icon{
+    cursor: pointer;
+}
+
+.slide-menu {
+    z-index: 1;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0 0 0 2vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 5vw;
+    right: -25vw; 
+    /* to hid the slide menu */
+    width: 25vw;
+    height: 30vw; 
+    background-color: #DFEDF5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto; 
+    /* to enable scroll */
+} 
+  
+  
+.menuwrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1vw;
+    color: #0060AF;
+    font-weight: 600;
+    font-size: 0.65em;
+}
+  
+.menuwrapper h2{
+    font-size: 2.2vw;
+    margin-top: 1vw;
+    margin-bottom: 0.7vw;
+}
+  
+.slide-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+  
+.slide-menu ul li {
+    padding-top: 1vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1vw;
+    display: flex;
+}
+
+.slide-menu li{
+    align-items: center;
+}
+  
+.slide-menu ul li img {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1vw;
+}
+  
+.notification-content {
+    flex: 1;
+    font-size: 1.25em;
+}
+
+.notification-content p{
+    margin: 0 auto;
+}
+  
+.notification-date {
+    font-size: 	0.9375em;
+    font-style: italic;
+    font-weight: 400;
+}
+  
+.notifdivider{
+    width: 100%;
+    border-color: #0060AF;
+}
+
+.back{
+    position: absolute;
+    left: 10vw;
+}
+
+.back img{
+    width: 8vw;
+}
+
+.title-rules{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11vw;
+}
+
+.title-rules h1{
+    text-align: center;
+    font-family: "Outfit", sans-serif;  
+    color: #0060AF;
+    font-size: 48px;
+    font-weight: 500;
+    text-shadow: 0px 3px 2px rgb(200, 200, 200);
+    border-bottom: 3px solid #1F6198;
+    letter-spacing: 0.5vw;
+}
+
+.rules{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 4vw;
+    font-size: 24px;
+    font-family: "Poppins";
+    text-align: justify;
+}
+
+li{
+    margin-left: 8.3vw;
+    margin-right: 8.3vw;
+    margin-bottom: 2rem;
+}
+
+.back{
+    position: absolute;
+    left: 6vw;
+    top: 7vw;
+    margin-top: 2vw;
+}
+
+.back img{
+    width: 7vw;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+
+.footer p {
+    color: #1F6198;
+    font-size: 1.3vw;
+    margin: 10px;
+}
+
+.footer img{
+    width: 5vw;
+}
