@@ -38,7 +38,7 @@ body{
 }
 
 .home{
-    width: 3w;
+    width: 3vw;
 }
 
 .menu {
@@ -68,6 +68,93 @@ body{
     height: auto;
 }
 
+.notif-icon{
+    cursor: pointer;
+}
+
+.slide-menu {
+    z-index: 1;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0 0 0 2vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 5vw;
+    right: -25vw; 
+    /* to hid the slide menu */
+    width: 25vw;
+    height: 30vw; 
+    background-color: #DFEDF5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto; 
+    /* to enable scroll */
+  } 
+  
+  
+  .menuwrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1vw;
+    color: #0060AF;
+    font-weight: 600;
+    font-size: 0.65em;
+  }
+  
+  .menuwrapper h2{
+    font-size: 2.2vw;
+    margin-top: 1vw;
+    margin-bottom: 0.7vw;
+  }
+  
+  .slide-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .slide-menu ul li {
+    padding-top: 1vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1vw;
+    display: flex;
+  }
+
+  .slide-menu li{
+    align-items: center;
+  }
+  
+  .slide-menu ul li img {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1vw;
+  }
+  
+  .notification-content {
+    flex: 1;
+    font-size: 1.25em;
+  }
+
+  .notification-content p{
+    margin: 0 auto;
+  }
+  
+  .notification-date {
+    font-size: 	0.9375em;
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  .notifdivider{
+    width: 100%;
+    border-color: #0060AF;
+  }
+
 .pf{
     display: flex;
     flex-direction: row;
@@ -92,24 +179,27 @@ body{
     left: 10vw;
 }
 
+.back img{
+    width: 8vw;
+}
+
 .wrapper{
     width: 100vw;
-    height: 50vw;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 2vw;
+    margin-top: 5vw;
     margin-bottom: 3vw; 
 }
 
 .wrapper > a{
-    width: 17vw;
-    height: 17vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    /* padding: 20px; */
+    width: 300px;
+    height: 300px;
+    margin: 3vw;
+    /* margin-right: 5vw; */
     border-radius: 50%; 
     justify-content: space-evenly;
 }
@@ -121,8 +211,8 @@ body{
 }
 
 .pf_com div{
-    width: 17vw;
-    height: 17vw;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,8 +226,8 @@ body{
 }
 
 .pf_cws div{
-    width: 17vw;
-    height: 17vw;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,8 +241,8 @@ body{
 }
 
 .pf_theatre div{
-    width: 17vw;
-    height: 17vw;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,8 +256,8 @@ body{
 }
 
 .pf_sergun div{
-    width: 17vw;
-    height: 17vw;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,8 +271,8 @@ body{
 }
 
 .pf_laundry div{
-    width: 17vw;
-    height: 17vw;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,8 +286,8 @@ body{
 }
 
 .pf_kitchen div{
-    width: 17vw;
-    height: 17vw;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,7 +298,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: white;
-    font-size: 1.7vw;
+    font-size: 30px;
     text-shadow:
     1.41px 1.41px black,
     2px 0 black,
@@ -226,6 +316,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
+    overflow: hidden;
 }
 
 .footer p {
