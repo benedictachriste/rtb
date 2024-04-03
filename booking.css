@@ -1,16 +1,17 @@
-body{
-    padding: 0px;
+*{
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .container-back{
     display: flex;
     align-items: center;
-    margin-left: 83px;
+    margin-left: 7.2rem;
 }
 
 .img-back{
-    margin-right: 10px;
+    margin-right: 0.5rem;
 }
 
 .back-text{
@@ -37,39 +38,40 @@ body{
 }
 
 .container-cws {
-    background: url("./img/workingspace.png");
+    background: url("./img/cws-booking.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1236px;
-    height: 295px;
+    width: 82.4vw;
+    height: 36.875vh;
 }
 
 .w-100 {
     width: 100%;
 }
 
-.container-cws .fashum-text p{
+.fashum-text p{
     font-family: 'outfit', sans-serif;
     font-size: 80px;
     color:white;
-    font-weight: bold;
+    font-weight: 500;
     text-shadow: 3px 4px 5.8px rgb(0, 0, 0, 0.25)
 }
 
 .text-month {
     font-family: 'outfit', sans-serif;
     height: 4vh;
-    margin-left: 83px;
+    margin-left: 7.2rem;
     font-size: 64px;
     color: #1F6198;
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
     text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25)
 }
 
 .horizontal-line {
-    margin-left: 83px;
-    margin-right: 83px;
+    margin-left: 7.2rem;
+    margin-right: 7.2rem;
 }
 
 .calender {
@@ -151,6 +153,12 @@ textarea {
     color: rgb(189, 43, 72);
     font-size: small;
 }
+
+/* #error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+} */
 
 
 .footer{
