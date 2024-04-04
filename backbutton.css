@@ -1,0 +1,14 @@
+.container-back{
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+    margin-top: 20vh;
+}
+
+.back{
+    position: absolute;
+}
+
+.back img{
+    width: 8vw;
+}

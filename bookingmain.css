@@ -9,7 +9,7 @@ body {
 
 /* COPY NAVBAR */
 /* COPY NAVBAR */
-.relative{
+/* .relative{
     position: relative;
     overflow: hidden;
 }
@@ -19,7 +19,6 @@ body {
     flex-direction: row;
     width: 100vw;
     height: 6vw;
-    /* justify-content: space-evenly; */
     background-color: #EEF7FC;
     position: fixed;
     z-index: 5;
@@ -95,12 +94,15 @@ body {
     color: #0060AF;
     font-weight: 600;
     font-size: 0.65em;
+    overflow: visible !important;
   }
   
   .menuwrapper h2{
     font-size: 2.2vw;
     margin-top: 1vw;
-    margin-bottom: 0.7vw;
+    margin-bottom: 0;
+    padding-bottom: 1.2vw;
+    overflow: visible;
   }
   
   .slide-menu ul {
@@ -118,6 +120,7 @@ body {
     padding-right: 1.5vw;
     padding-bottom: 1vw;
     display: flex;
+    overflow: visible !important;
   }
 
   .slide-menu li{
@@ -146,9 +149,10 @@ body {
   }
   
   .notifdivider{
+    margin: 0;
     width: 100%;
     border-color: #0060AF;
-  } 
+  }  */
 
 /* BATAS COPY NAVBAR */
 /* BATAS COPY NAVBAR */

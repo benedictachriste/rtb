@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="booking.css"/>
-    <script src="./bookingmain.js" defer></script>
+    <script src="./booking.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,7 +30,7 @@
                     <a href="Rules-Main.html">Rules</a>
                     <a href="facilityMain-Penghuni.html">Facilities</a>
                     <a href="./np-home.html">Logout</a>
-                    <div class="notif-icon" onclick="toggleSlideMenu()">
+                    <div class="notif-icon">
                         <img src="./img/Vector.png">
                     </div>
                 </div>
@@ -85,14 +85,14 @@
             </div>
         </div>
         <div class="month-wrapper">
-            <h1 class="text-month">Maret 2024</h1>
+            <h1 class="text-month">March 2024</h1>
             <hr class="horizontal-line">
         </div>
         
         <div class="calender"></div>
         
         <div class="wrapper-bookform">
-            <form action="" class="form" id="form">
+            <form id="form">
                 <div>
                     <label for="Name">Person Responsible</label>
                     <br>
@@ -110,16 +110,18 @@
                             </button>
                         </div>
                         <div id="dropdown-options" class="dropdown-options">
-                        <button class="dropdown-option bp3">PPBP 3</button>
-                        <button class="dropdown-option">PPBP 4</button>
-                        <button class="dropdown-option">PPTI 14</button>
-                        <button class="dropdown-option">PPTI 15</button>
-                        <button class="dropdown-option">PPTI 16</button>
-                        <button class="dropdown-option">PPBP 5</button>
-                        <button class="dropdown-option">PPBP 6</button>
-                        <button class="dropdown-option">PPTI 17</button>
-                        <button class="dropdown-option">PPTI 18</button>
-                        <button class="dropdown-option ti19">PPTI 19</button>
+                            <button class="dropdown-option bp3">PPBP 3</button>
+                            <button class="dropdown-option">PPBP 4</button>
+                            <button class="dropdown-option">PPTI 14</button>
+                            <button class="dropdown-option">PPTI 15</button>
+                            <button class="dropdown-option">PPTI 16</button>
+                            <button class="dropdown-option">PPBP 5</button>
+                            <button class="dropdown-option">PPBP 6</button>
+                            <button class="dropdown-option">PPTI 17</button>
+                            <button class="dropdown-option">PPTI 18</button>
+                            <button class="dropdown-option ti19">PPTI 19</button>
+                            <!-- kalo click others harus isi di desc org - purpose -->
+                            <button class="dropdown-option">Others</button>
                         </div>
                     </div> 
                 </div>
@@ -131,12 +133,16 @@
                 <div>
                     <label for="Day and Date">Day and Date</label>
                     <br>
-                    <input type="date" required>
+                    <input type="date" id="dateInput" required>
                 </div>
-                <div class="des">
-                    <label for="Time">Time [Enter time range, e.g., 21.00 - 23.00]</label>
+                <div class="time">
+                    <label for="Time-start">Time [Enter time range, e.g., 21.00 - 23.00]</label>
                     <br>
-                    <input type="time" required>
+                    <div class="start-end">
+                        <input type="time" id="start-time" name="start-time" required>
+                        <p>_</p>
+                        <input type="time" id="end-time" name="end-time" required>
+                    </div>
                 </div>
                 <div>
                     <label for="Description">Description</label>
@@ -144,7 +150,7 @@
                     <input type="text" id="des" name="des" required>
                 </div>
 
-                <p class="log" id="error"></p>
+                <p id="error"></p>
                 
                 <div>
                     <button type="submit"class="addf sub" id="submit">Submit</button>
