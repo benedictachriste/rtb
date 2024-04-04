@@ -92,9 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const locEl = document.getElementById("loc")
       const desEl = document.getElementById("des")
 
-
       const toggle = document.getElementById("dropdown-toggle")
-
 
       const namee = nameEl.value
       const className = classEl.textContent

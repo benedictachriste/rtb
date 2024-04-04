@@ -249,8 +249,7 @@ input[type="text"]{
     background-color: #FAFAFC;
 }
 
-input[type="date"],
-input[type="time"]{
+input[type="date"]{
     border: none;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -260,6 +259,22 @@ input[type="time"]{
     font-family: "Poppins", sans-serif;
     padding: 0px 10px 0px 10px;
 
+}
+
+input[type="time"]{
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 2px solid #e6e6f0;
+    height: 40px;
+    width: 13.63%;
+    font-family: "Poppins", sans-serif;
+    padding: 0px 10px 0px 10px;
+}
+
+.start-end{
+    display: flex;
+    gap: 1vw;
 }
 
 .bedaSendiri {
@@ -368,17 +383,12 @@ form > div:last-of-type {
     width: 120px;
 }
 
-.log{
-    color: rgb(189, 43, 72);
-    font-size: small;
-}
-
-/* #error {
+#error{
+    font-size: 1.3vw;
     color: red;
-    font-size: 14px;
-    margin-top: 5px;
-} */
-
+    margin-top: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
 
 .footer{
     width: 100%;
