@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="rules-theatre.css">
-    <script src="./rules-page.js" defer></script>
+    <link rel="stylesheet" href="rules.css">
+    <link rel="stylesheet" href="rules-relative.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="./notif.js" defer></script>
     <title>RTB Life - Rules Theatre</title>
 </head>
 <body>
@@ -33,7 +35,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div id="slideMenu" class="slide-menu">
             <div class="menuwrapper">
                 <h2 class="notiftittle">Notifications</h2>
@@ -66,21 +68,23 @@
             </div>
         </div>
 
-        <a href="./rules-public.html" class="back"><img src="./img/back.png" alt="back"></a>
-    
-        <div class="title-rules"><h1>THEATRE</h1></div>
+        <div class="container-back">
+            <a href="./rules-public.html" class="back"><img src="./img/back.png" alt="back"></a>
+          </div>
+
+        <div class="title-rules"><p>THEATRE</p></div>
         
         <div class="rules">
-            <li>Apabila ingin menggunakan Theater untuk kegiatan tertentu (privat), diharapkan booking terlebih dahulu ke PIC Theater.</li>
-            <li>Batasan maksimum peserta kegiatan adalah 50 orang.</li>
+            <li class="rules-list">Apabila ingin menggunakan Theater untuk kegiatan tertentu (privat), diharapkan booking terlebih dahulu ke PIC Theater.</li>
+            <li class="rules-list">Batasan maksimum peserta kegiatan adalah 50 orang.</li>
         </div>
     </div>
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2020</p>
+            <img src="./img/logoBCA.png" class="footer-img"/>
+            <p>All Right Reserved</p>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="footer">
-        <p>Copyright © 2020</p>
-        <img src="./img/logoBCA.png" class="footer-img"/>
-        <p>All Right Reserved</p>
-    </div>
-</footer>
 </html>

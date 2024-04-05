@@ -11,12 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="rules-public.css">
-    <script src="./rules-page.js" defer></script>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="rules.css">
+    <link rel="stylesheet" href="backbutton.css">
+    <script src="notif.js" defer></script>
     <title>Rules Page - Public Facilities</title>
 </head>
 <body>
     <div class="relative">
-        <!-- navbar -->
         <div class="navbar">
             <div class="logo">
                 <img src="./img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
@@ -29,7 +31,7 @@
                 <a href="Rules-Main.html">Rules</a>
                 <a href="facilityMain-Penghuni.html">Facilities</a>
                 <a href="./np-home.html">Logout</a>
-                <div class="notif-icon" onclick="toggleSlideMenu()">
+                <div class="notif-icon">
                     <img src="./img/Vector.png">
                 </div>
             </div>
@@ -67,12 +69,17 @@
             </div>
         </div>
 
-        <div class="pf"><h1>PUBLIC FACILITIES</h1></div>
+        <div class="container-back">
+            <a href="./Rules-Main.html" class="back"><img src="./img/back.png" alt="back"></a>
+        </div>
+
+        <div class="title-rules">
+            <p>PUBLIC FACILITIES</p>
+        </div>
         
-        <a href="" class="back"><img src="./img/back.png" alt="back"></a>
 
         <div class="wrapper">
-            <a href="" class="pf_com">
+            <a href="./rules-communal.html" class="pf_com">
                 <div><h2 class="title">COMMUNAL</h2></div>
             </a>
             
@@ -80,11 +87,11 @@
                 <div><h2 class="title">CO-WORKING SPACE</h2></div>
             </a>
             
-            <a href="" class="pf_theatre">
+            <a href="./rules-theatre.html" class="pf_theatre">
                 <div><h2 class="title">THEATRE</h2></div>
             </a>
             
-            <a href="" class="pf_sergun">
+            <a href="./rules-multifunctional.html" class="pf_sergun">
                 <div><h2 class="title">MULTIFUNCTIONAL AREA</h2></div>
             </a>
             

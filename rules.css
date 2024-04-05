@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(#FCFFFF ,#DFEDF5);
+}
+
+/* BACK BUTTON */
+.container-back{
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+    margin-top: 20vh;
+}
+
+.back{
+    position: absolute;
+}
+
+.back img{
+    width: 8vw;
+}
+/* BACK BUTTON */
+
+.title-rules{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    font-family: "Outfit", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #1F6198;
+    text-shadow: 0px 3px 2px rgb(200, 200, 200);
+    /* text-decoration: underline; */
+}
+
+.title-rules p {
+    border-bottom: 3px solid #1F6198;
+}
+
+
+.rules{
+    margin-top: 98px;
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins";
+    text-align: justify;
+}
+
+.rules-list{
+    margin-left: 8.3vw;
+    margin-right: 8.3vw;
+    margin-bottom: 2rem;
+    font-size: 24px;
+}
+
+.other-rules{
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.other-rules-top{
+    font-weight: bold;
+    /* margin-top: 4rem; */
+    margin-bottom: 0.5rem;
+}
+
+.ordered {
+    list-style-position: inside;
+}
+
+.footer{
+    width: 100vw;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    margin-top: 200px !important;
+    margin-bottom: 0;
+}
+
+.footer p {
+    color: #1F6198;
+    font-size: 1.3vw;
+    margin: 10px;
+}
+
+.footer img{
+    width: 5vw;
+}
+

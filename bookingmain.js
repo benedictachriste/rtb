@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       let isValid = true
 
-      if(facility === "" || loc === "" || des === "" || namee == " "){
+      if(facility === "" || loc === "" || des === "" || namee === ""){
         error.textContent = "Please fill in all fields"
         error.style.color = "red"
         error.style.display = "block"
@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if(isValid){
         if(className == "Select your class"){
           error.textContent = "Please select your class"
+          error.style.color = "red"
           error.style.display = "block"
           isValid = false
         }
@@ -122,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if(isValid){
         if(!nameRegex.test(namee)){
           error.textContent = "Name should only contain characters within a-z, A-Z, and space"
+          error.style.color = "red"
           error.style.display = "block"
           isValid = false
         }

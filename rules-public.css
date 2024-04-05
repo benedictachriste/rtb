@@ -160,7 +160,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 9vw;
+    /* margin-top: 9vw; */
 }
 
 .pf h1{
@@ -172,15 +172,6 @@ body{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     text-decoration: underline;
     letter-spacing: 0.5vw;
-}
-
-.back{
-    position: absolute;
-    left: 10vw;
-}
-
-.back img{
-    width: 7vw;
 }
 
 .wrapper{
