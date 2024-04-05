@@ -79,7 +79,7 @@ a {
 }
 
 .slide-menu {
-    z-index: 3;
+    z-index: 4;
     font-family: "Poppins", sans-serif;
     border-radius: 0 0 0 2vw;
     position: fixed;
