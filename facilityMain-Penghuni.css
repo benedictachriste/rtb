@@ -293,14 +293,6 @@ body{
     background-color: #F2F2F2;
 }
 
-.footer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F2F2F2;
-}
-
 .footer p {
     color: #1F6198;
     margin: 10px;

@@ -66,11 +66,11 @@
     display: flex;
     justify-content: center;
     top: 5vw;
-    right: -25vw ; 
+    right: -30vw ; 
     width: 25vw;
     height: 30vw; 
     background-color: #DFEDF5;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 1);
     transition: right 0.3s ease-in-out;
     overflow-y: auto; 
   } 
