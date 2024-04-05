@@ -79,7 +79,7 @@ a {
 }
 
 .slide-menu {
-    z-index: 1;
+    z-index: 3;
     font-family: "Poppins", sans-serif;
     border-radius: 0 0 0 2vw;
     position: fixed;
@@ -88,14 +88,12 @@ a {
     justify-content: center;
     top: 5vw;
     right: -25vw; 
-    /* to hid the slide menu */
     width: 25vw;
     height: 10vw; 
     background-color: #DFEDF5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease-in-out;
     overflow-y: auto; 
-    /* to enable scroll */
   } 
 
 .bluebutton{

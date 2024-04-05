@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const totalNum = document.getElementById('number').value
     const date = document.getElementById('dateInput').value
     const purpose = document.getElementById('des').value
+    const start = document.getElementById('start-time').value
+    const end = document.getElementById('end-time').value
 
     const toggle = document.getElementById("dropdown-toggle")
 
@@ -54,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let isValid = true;
 
-    if(name === "" || totalNum === "" || purpose === ""){
+    if(name === "" || totalNum === "" || purpose === "" || date === "" || start === "" || end === ""){
       error.textContent = "Please fill in all fields"
       error.style.color = "red"
       error.style.display = "block"
@@ -64,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if(isValid){
       if(!nameRegex.test(name)){
         error.textContent = "Name should only contain characters within a-z, A-Z, and space"
+        error.style.color = "red"
         error.style.display = "block"
         isValid = false
       }
@@ -72,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if(isValid){
       if(className == "Select your class"){
         error.textContent = "Please select your class/organization"
+        error.style.color = "red"
         error.style.display = "block"
         isValid = false
       }
@@ -83,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if(!numRegex.test(totalNum)){
         error.textContent = "Number of attendees should contain numbers only"
         error.style.display = "block"
+        error.style.color = "red"
         isValid = false
       }
     }
@@ -90,32 +95,30 @@ document.addEventListener("DOMContentLoaded", function() {
     if(isValid){
       if(totalNum < 20){
         error.textContent = "The number of attendees does not meet the minimum requirements"
+        error.style.color = "red"
         error.style.display = "block"
         isValid = false
       }
     }
 
-    if(isValid){
-      const parts = date.split('-'); // Pisahkan input tanggal menjadi bagian-bagian (tahun, bulan, tanggal)
-      const year = parts[0];
-      const month = parts[1];
-      const day = parts[2];
+    // if(isValid){
+    //   const parts = date.split('-'); // Pisahkan input tanggal menjadi bagian-bagian (tahun, bulan, tanggal)
+    //   const year = parts[0];
+    //   const month = parts[1];
+    //   const day = parts[2];
 
       // asumsi CWS only available on Saturday, 23rd March 2024
-      if (year == '2024' && month == '03' && day == '23') {
-        isValid = true;
-      } else {
-        error.textContent = "Please choose another date because Co-Working space is full"
-        error.style.display = "block"
-        isValid = false
-      }
-    }
+      // if (year == '2024' && month == '03' && day == '23') {
+      //   isValid = true;
+      // } else {
+      //   error.textContent = "Please choose another date because Co-Working space is full"
+      //   error.style.display = "block"
+      //   isValid = false
+      // }
+    // }
 
     // asumsi available di semua jam dan hanya dapat di booking maksimal 2 jam
     if(isValid){
-      const start = document.getElementById('start-time').value
-      const end = document.getElementById('end-time').value
-
       const [startHour, startMinute] = start.split(':').map(Number);
       const [endHour, endMinute] = end.split(':').map(Number);
 
@@ -129,6 +132,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const hours = Math.floor(duration / (1000 * 60 * 60));
       if(hours > 2){
         error.textContent = "Maximum duration for Co-working space booking is 2 hours"
+        error.style.color = "red"
         error.style.display = "block"
         isValid = false
       }
