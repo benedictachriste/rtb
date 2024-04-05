@@ -148,20 +148,12 @@
     border-color: #0060AF;
 } 
 
+.wrapper-back{
+    margin-bottom: 2vw;
+}
+
 a{
     text-decoration: none;
-}
-
-.container-back{
-    display: flex;
-    align-items: center;
-    margin-left: 8vw;
-    margin-top: 10vw;
-    margin-bottom: 1vw;
-}
-
-.container-back img{
-    width: 8vw;
 }
 
 .wrapper {
@@ -203,13 +195,13 @@ a{
 
 .month-wrapper{
     position: absolute;
-    top: 42vw;
+    top: 30vw;
 }
 
 .text-month {
     font-family: 'outfit', sans-serif;
     height: 4vw;
-    margin-left: 8vw;
+    margin-left: 5vw;
     font-size: 4.5vw;
     color: #1F6198;
     font-weight: 500;
@@ -218,9 +210,9 @@ a{
 }
 
 .horizontal-line {
-    width: 83vw;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    width: 89vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .calender {
