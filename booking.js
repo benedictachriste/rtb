@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
  document.addEventListener("DOMContentLoaded", function(){
   const subButton = document.getElementById('submit')
-  subButton.addEventListener("click", function(event){
-    event.preventDefault()
+  subButton.addEventListener("click", function(x){
+    x.preventDefault()
 
     const name = document.getElementById('name').value
     const className = document.querySelector('.dropdown-text').textContent
