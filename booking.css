@@ -215,8 +215,83 @@ a{
     margin-right: 5vw;
 }
 
-.calender {
-    height: 50vw;
+.calender-bg{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25vw;
+    justify-content: center;
+    top: 39vw;
+}
+
+.calender-box {
+    background-color: #DFEDF5;
+    width: 90%;
+    height: 100%;
+    z-index: -1;
+}
+
+.calender-line1{
+    width: 80%;
+    height: 0.23vw;
+    background-color: black;
+    margin-top: 0.5vw;
+}
+
+.calender-wrapper{
+    width: 100%;
+    height: 25vw;
+    margin-top: 18.7vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    padding: 2.7vw 1.7vw; 
+}
+
+.calender-content{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.calender-bookings{
+    width: 100%;
+    height: 100%;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.calender-date{
+    height: 40%;
+}
+
+.calender-date p:first-of-type{
+    font-size: 3.4vw;
+}
+
+.calender-date p:nth-of-type(2){
+    font-size: 1.65vw;
+}
+
+.detail-container{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.calender-details .tutor{
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin-top: 2vw;
+}
+
+.calender-details .tutor-time{
+    font-size: 1vw;
+    font-weight: 400;
 }
 
 label{
@@ -224,7 +299,7 @@ label{
 }
 
 .wrapper-bookform{
-    margin: 0 auto;
+    margin: 0vw;
     padding: 1vw;
     background-color: #ffffff;
     margin-left: 3vw;
