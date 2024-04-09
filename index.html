@@ -14,28 +14,38 @@
     <script defer src="./home.js"></script>
     <!-- <script defer src="./bookingmain.js"></script> -->
     <script defer src="./notif.js"></script>
+    <script src="./navbar.js"></script>
     <title>RTBLife - Home</title>
 </head>
 <body>
     <div class="relative">
-        <div class="navbar">
-            <div class="logo">
-                <img src="./img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
-                <a href="np-home.html">
-                    <img src="./img/home icon.png" alt="home-icon" class="home">
-                </a>
-            </div>
-            <div class="menu">
-                <p>Book and Complain</p>
-                <p>Rules</p>
-                <a href="facilityMain-NP.html">Facilities</a>
-                <a href="./login.html">Login</a>
-                <div class="notif-icon">
-                    <img src="./img/Vector.png">
+        <nav class="nav-wrapper">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
+                    <a href="np-home.html">
+                        <img src="./img/home icon.png" alt="home-icon" class="home">
+                    </a>
+                </div>
+                <div class="menu" id="menu" onclick="dropDown()">
+                    <p>Book and Complain</p>
+                    <p>Rules</p>
+                    <a href="facilityMain-NP.html">Facilities</a>
+                    <a href="./login.html">Login</a>
+                    <div class="notif-icon">
+                        <img src="./img/Vector.png">
+                    </div>
+                </div>
+
+                <div class="hamburger-menu onclick" id="menu-toggle" onclick="hamburgerMenu()">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-        </div>
-
+        </nav>
+        
         <div id="slideMenu" class="slide-menu">
             <div class="bluebutton">
                 <a href="login.html">Login</a>
@@ -44,11 +54,11 @@
 
 
     
-        <div class="fade">
+        <div class="fade content">
             <div class="wrapper"></div>
             <div class="title"><h1>RUMAH<br> TALENTA<br> BCA</h1></div>
         </div>
-        <div class="about">
+        <div class="about content">
             <h2>About Us</h2>
             <div class="desc-wrap">
                 <p>Rumah Talenta BCA is a building located at Sentul City that is used as a dormitory 
@@ -57,30 +67,30 @@
                     so that together we can create a promising future.
                 </p>
             </div>
-            <div class="map-wrap">
+            <div class="map-wrap content">
                 <a href="https://maps.app.goo.gl/AKsfGgwj4ZwU94Ju9">
                     <img class="maps" src="./img/map.png" alt="maps">
                 </a>
             </div> 
         </div>
     
-        <div class="ellipse-1">
+        <div class="ellipse-1 content">
             <img src="./img/Ellipse.png">
         </div>
     
-        <div class="dormitory-supervisor">
+        <div class="dormitory-supervisor content">
             <h2 class="text-primary">Dormitory Supervisor</h2>
         </div>
     
-        <div class="wrap-structure">
+        <div class="wrap-structure content">
             <img src="./img/structure.png" alt="Dormitory structure">
         </div>
     
-        <div class="ellipse-2">
+        <div class="ellipse-2 content">
             <img src="./img/Ellipse.png">
         </div>
     
-        <div class="article">
+        <div class="article content">
             <h2>Articles</h2>
             <div class="wrap-article">
                 <div>
@@ -140,7 +150,7 @@
             </div>
         </div>
     
-        <div class="join">
+        <div class="join content">
             <div class="wrapper-join">
                 <div class="divide">
                     <h2>Want to Join Us?</h2>

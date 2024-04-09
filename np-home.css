@@ -27,7 +27,7 @@ a {
 .logo {
     display: flex;
     align-items: center;
-    width: 30vw;
+    width: 30%;
     margin-left: 0vw;
     justify-content: space-around;
     overflow: hidden;
@@ -40,7 +40,7 @@ a {
 .menu {
     display: flex;
     align-items: center;
-    width: 70vw;
+    width: 70%;
     justify-content: space-around;
     margin-right: 0vw;
 }
@@ -52,6 +52,13 @@ a {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: #0060AF;
+    transition: text-decoration 0.3s ease;
 }
 
 .menu p{
@@ -72,6 +79,60 @@ a {
 .menu img{
     width: 2vw;
     height: auto;
+}
+
+/*Hamburger menu*/
+.hamburger-menu{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    height: 7vw;
+    background-color: #EEF7FC;
+    position: relative;
+}
+
+.hamburger-menu input{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 120px;
+    top: 5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.hamburger-menu span{
+    position: relative;
+    left: 123px;
+    margin: 2px;
+    width: 30px;
+    height: 4px;
+    background-color: #0060AF;
+    border-radius: 5px;
+    transition: all 0.5s;
+    z-index: 6;
+}
+
+.hamburger-menu span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.hamburger-menu input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(3px, -5.25px);
+}
+
+.hamburger-menu span:nth-child(4){
+    transform-origin: 0 0;
+}
+
+.hamburger-menu input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(0px, 4.75px);
+}
+
+.hamburger-menu input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
 }
 
 .notif-icon{
@@ -465,4 +526,43 @@ a {
 
 .footer img{
     width: 5vw;
+}
+
+/*Responsive breakpoint*/
+
+/*mobile app*/
+@media screen and (max-width:576px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        height: 7vw;
+        justify-content: space-between;
+    }
+    .hamburger-menu{
+        display: flex;
+        width: 30%;
+    }
+    .menu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 7vw;
+        height: 20vh;
+        width: 100vw;
+        background-color:#EEF7FC;
+        transform: translateY(0);
+        transition: all 1s;
+    }
+    
+    .menu a{
+        font-size: 13px;
+    }
+    .menu p{
+        display: none;
+    }
+
+    
+    
 }
