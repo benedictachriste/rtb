@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;  
+    background: url("/img/bg_logo.png"), linear-gradient(#FCFFFF ,#DFEDF5);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: scroll;
+    
+}
+
+.navbar{
+    margin: 4.438rem 5.5rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 2rem;
+    margin-top: 7.206rem;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 6rem;
+}
+
+#error {
+    color: red;
+    font-size: 0.8rem;
+    text-align: center  ;
+}
+
+.login-extra{
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #0060AF;
+}
+
+.checkbox{
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-class {
+    display: flex;
+    flex-direction: column;
+    gap: 0.313rem;
+    color: #0060AF;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.contact{
+    /* width: 33%; */
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 2rem;
+    gap: 2.25rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.563rem;
+    width: 27rem;
+    font-size: smaller;
+    text-align: center;
+}
+
+.wa{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-contact{
+    margin-bottom: 1.063rem;
+}
+
+
+.input {
+    border: none;
+    box-shadow: 0rem 0.25rem 0.625rem rgb(184, 192, 197);
+    border-radius: 0.75rem;
+    height: 3.963rem;
+    text-align: left;
+    padding-left: 3.125rem;
+    font-size: 1.25rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+
+.login-button{
+    color: white;
+    background-color: #003465;
+    height: 3.688rem;
+    border-radius: 1.875rem;
+    font-size: 1.25rem;
+}
+
+::placeholder {
+    opacity: 75%;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+.footer p {
+    color: #1F6198;
+    margin: 10px;
+}

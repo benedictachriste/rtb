@@ -196,7 +196,7 @@ body{
 }
 
 .pf_com{
-    background: url(./img/comm2.png);
+    background: url(/img/comm2.png);
     box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
     background-size: cover;
 }
@@ -211,7 +211,7 @@ body{
 }
 
 .pf_cws{
-    background: url(./img/cws-facility.jpg);
+    background: url(/img/cws-facility.jpg);
     box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
     background-size: cover;
 }
@@ -241,7 +241,7 @@ body{
 }
 
 .pf_sergun{
-    background: url(./img/sergun.png);
+    background: url(/img/sergun.png);
     box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
     background-size: cover;
 }
@@ -256,7 +256,7 @@ body{
 }
 
 .pf_laundry{
-    background: url(./img/laundry-facility.jpeg);
+    background: url(/img/laundry-facility.jpeg);
     box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
     background-size: cover;
 }
@@ -271,7 +271,7 @@ body{
 }
 
 .pf_kitchen{
-    background: url(./img/kitchen.png);
+    background: url(/img/kitchen.png);
     box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
     background-size: cover;
 }

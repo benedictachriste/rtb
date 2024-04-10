@@ -10,39 +10,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="np-home.css">
-    <script defer src="./home.js"></script>
-    <!-- <script defer src="./bookingmain.js"></script> -->
-    <script defer src="./notif.js"></script>
-    <title>RTBLife - Home</title>
+    <link rel="stylesheet" href="/style/homepage.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <script defer src="/script/home.js"></script>
+    <script defer src="/script/notif.js"></script>
+    <title>RTBLife - HomePage</title>
 </head>
 <body>
+    
     <div class="relative">
         <div class="navbar">
             <div class="logo">
-                <img src="./img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
-                <a href="np-home.html">
-                    <img src="./img/home icon.png" alt="home-icon" class="home">
+                <img src="/img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
+                <a href="homepage.html">
+                    <img src="/img/home icon.png" alt="home-icon" class="home">
                 </a>
             </div>
             <div class="menu">
-                <p>Book and Complain</p>
-                <p>Rules</p>
-                <a href="facilityMain-NP.html">Facilities</a>
-                <a href="./login.html">Login</a>
+                <a href="/index/bookingmain.html">Booking and Complain</a>
+                <a href="/index/Rules-Main.html">Rules</a>
+                <a href="/index/facilityMain-Penghuni.html">Facilities</a>
+                <a href="/index/np-home.html">Logout</a>
                 <div class="notif-icon">
-                    <img src="./img/Vector.png">
+                    <img src="/img/Vector.png">
                 </div>
             </div>
         </div>
-
+        
         <div id="slideMenu" class="slide-menu">
-            <div class="bluebutton">
-                <a href="login.html">Login</a>
+            <div class="menuwrapper">
+                <h2 class="notiftittle">Notifications</h2>
+                <ul>
+                    <li>
+                        <img src="/img/insidenotif.png" alt="Notification Icon">
+                        <div class="notification-content">
+                            <p>New rule has been updated.</p>
+                            <p class="notification-date">June 28, 2024</p>
+                        </div>
+                    </li>
+                    <hr class="notifdivider">
+                    <li>
+                        <img src="/img/insidenotif.png" alt="Notification Icon">
+                        <div class="notification-content">
+                            <p>Your complain has been recorded.</p>
+                            <p class="notification-date">June 18, 2024</p>
+                        </div>
+                    </li>
+                    <hr class="notifdivider">
+                    <li>
+                        <img src="./img/insidenotif.png" alt="Notification Icon">
+                        <div class="notification-content">
+                            <p>Your booking request has been approved.</p>
+                            <p class="notification-date">June 10, 2024</p>
+                        </div>
+                    </li>
+                    <hr class="notifdivider">
+                </ul>
             </div>
         </div>
-
-
     
         <div class="fade">
             <div class="wrapper"></div>
@@ -59,13 +84,13 @@
             </div>
             <div class="map-wrap">
                 <a href="https://maps.app.goo.gl/AKsfGgwj4ZwU94Ju9">
-                    <img class="maps" src="./img/map.png" alt="maps">
+                    <img class="maps" src="/img/map.png" alt="maps">
                 </a>
             </div> 
         </div>
     
         <div class="ellipse-1">
-            <img src="./img/Ellipse.png">
+            <img src="/img/Ellipse.png">
         </div>
     
         <div class="dormitory-supervisor">
@@ -73,20 +98,20 @@
         </div>
     
         <div class="wrap-structure">
-            <img src="./img/structure.png" alt="Dormitory structure">
+            <img src="/img/structure.png" alt="Dormitory structure">
         </div>
     
         <div class="ellipse-2">
-            <img src="./img/Ellipse.png">
+            <img src="/img/Ellipse.png">
         </div>
     
         <div class="article">
             <h2>Articles</h2>
             <div class="wrap-article">
                 <div>
-                    <a href="np-article.html">
+                    <a href="article.html">
                         <div class="article1">
-                            <img src="./img/party.png" alt="" class="photo">
+                            <img src="/img/party.png" alt="" class="photo">
                             <div class="article-title">
                                 <h3>Party 2023</h3>
                             </div>
@@ -97,9 +122,9 @@
                         </div>
                     </a>
                     
-                    <a href="np-article.html">
+                    <a href="article.html">
                         <div class="article2">
-                            <img src="./img/independence-day.jpeg" alt="" class="photo">
+                            <img src="/img/independence-day.jpeg" alt="" class="photo">
                             <div class="article-title">
                                 <h3>Independence Day</h3>
                             </div>
@@ -112,9 +137,9 @@
                 </div>
     
                 <div>
-                    <a href="np-article.html">
+                    <a href="article.html">
                         <div class="article1">
-                            <img src="./img/baksos.png" alt="" class="photo">
+                            <img src="/img/baksos.png" alt="" class="photo">
                             <div class="article-title">
                                 <h3>Charity and Blood Donor</h3>
                             </div>
@@ -125,9 +150,9 @@
                         </div>
                     </a>
     
-                    <a href="np-article.html">
+                    <a href="article.html">
                         <div class="article2">
-                            <img src="./img/rtb-gold.JPG" alt="" class="photo">
+                            <img src="/img/rtb-gold.JPG" alt="" class="photo">
                             <div class="article-title">
                                 <h3>RTB Gold Festival</h3>
                             </div>
@@ -157,13 +182,13 @@
     
                 <div class="program">
                     <div class="ppbp">
-                        <img src="./img/ppbp.png" alt="">
+                        <img src="/img/ppbp.png" alt="">
                         <h3>Program Pendidikan Bisnis dan Perbankan <br>(PPBP)</h3>
                     </div>
                     
                     <div class="ppti">
                         <h3>Program Pendidikan Teknik Informatika (PPTI)</h3>
-                        <img src="./img/ppti.png" alt="">
+                        <img src="/img/ppti.png" alt="">
                     </div>
                 </div>
                 
@@ -175,7 +200,7 @@
 <footer>
     <div class="footer">
         <p>Copyright © 2020</p>
-        <img src="./img/logoBCA.png" class="footer-img"/>
+        <img src="/img/logoBCA.png" class="footer-img"/>
         <p>All Right Reserved</p>
     </div>
 </footer>
