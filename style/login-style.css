@@ -1,3 +1,10 @@
+/*
+tinggi atau lebar pake vw(width) vh(height)
+margin padding pake rem
+font size pake em
+border dkk pake px
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +13,7 @@
 
 body{
     font-family: "Poppins", sans-serif;  
-    background: url("./img/bg_logo.png"), linear-gradient(#FCFFFF ,#DFEDF5);
+    background: url("/img/bg_logo.png"), linear-gradient(#FCFFFF ,#DFEDF5);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-attachment: scroll;
@@ -24,7 +31,8 @@ body{
 .form-container{
     display: flex;
     flex-direction: column;
-    width: 33%;
+    /* width: 33%; */
+    width: 33vw;
     gap: 2rem;
     margin-top: 7.206rem;
 }
@@ -38,7 +46,7 @@ body{
 
 #error {
     color: red;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     text-align: center  ;
 }
 
@@ -46,7 +54,7 @@ body{
     margin-top: 0.7rem;
     display: flex;
     justify-content: space-between;
-    font-size: 0.75rem;
+    font-size: 0.75em;
     color: #0060AF;
 }
 
@@ -63,7 +71,7 @@ body{
     gap: 0.313rem;
     color: #0060AF;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 
 .contact{
@@ -80,7 +88,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 1.563rem;
-    width: 27rem;
+    width: 58.064516129032256vw;
     font-size: smaller;
     text-align: center;
 }
@@ -98,22 +106,23 @@ body{
 
 .input {
     border: none;
-    box-shadow: 0rem 0.25rem 0.625rem rgb(184, 192, 197);
-    border-radius: 0.75rem;
-    height: 3.963rem;
+    box-shadow: 0px 4px 10px rgb(184, 192, 197);
+    border-radius: 12px;
+    height: 7.965829145728644vh;
     text-align: left;
     padding-left: 3.125rem;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
   }
 
 .login-button{
+    cursor: pointer;
     color: white;
     background-color: #003465;
-    height: 3.688rem;
-    border-radius: 1.875rem;
-    font-size: 1.25rem;
+    height: 7.3728643216080405vh;
+    border-radius: 30px;
+    font-size: 1.25em;
 }
 
 ::placeholder {
@@ -130,5 +139,90 @@ body{
 
 .footer p {
     color: #1F6198;
-    margin: 10px;
+    margin: 0.625rem;
+}
+
+.footer img{
+    width: 10%;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        margin: 4rem 5rem 0rem;
+    }
+    .logo{
+        width: 25%;
+    }
+    .home-icon{
+        width: 5%;
+    }
+    .form-container{
+        width: 40vw;
+    }
+    .section-class{
+        font-size: 1.15em;
+    }
+    .input{
+        font-size: 1.15em;
+    }
+    .login-extra{
+        font-size: 0.7em;
+    }
+    .login-button{
+        font-size: 1.15em;
+    }
+
+}  
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        margin: 3.5rem 4.5rem 0rem;
+    }
+    .form-container{
+        width: 47vw;
+    }
+    .section-class{
+        font-size: 1.1em;
+    }
+    .input{
+        font-size: 1.1em;
+    }
+    .login-extra{
+        font-size: 0.6em;
+    }
+    .login-button{
+        font-size: 1.1em;
+    }
+    .contact-container{
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        margin: 3rem 4rem 0rem;
+    }
+    .form-container{
+        width: 65vw;
+    }
+    .section-class{
+        font-size: 1em;
+    }
+    .input{
+        font-size: 1em;
+    }
+    .login-button{
+        font-size: 1em;
+    }
+    .contact-container{
+        font-size: 0.65em;
+    }
+    .footer{
+        font-size: 0.5em;
+    }
+}
+
+/*opsional*/
+@media screen and (max-width: 320px) {
+    
 }

@@ -21,8 +21,8 @@ function validateForm(e){
         return false;
     }
 
-    errorElement.innerHTML = '';    
-
+    errorElement.innerHTML = ''; 
+    
     location.href = "homepage.html";
 
     return true;
