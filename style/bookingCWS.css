@@ -325,6 +325,7 @@ input[type="date"]{
     width: 30%;
     font-family: "Poppins", sans-serif;
     padding: 0px 10px 0px 10px;
+    background-color: #FAFAFC;
 
 }
 
@@ -337,6 +338,7 @@ input[type="time"]{
     width: 13.63%;
     font-family: "Poppins", sans-serif;
     padding: 0px 10px 0px 10px;
+    background-color: #FAFAFC;
 }
 
 .start-end{
@@ -375,7 +377,7 @@ input[type="time"]{
 .dropdown-options {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #FAFAFC;
     border: none;
     border-radius: 8px 8px 8px 8px;
     width: 100%;
@@ -417,6 +419,7 @@ input[type="time"]{
     text-align: left;
     height: 100px;
     border: 2px solid #e6e6f0;
+    background-color: #FAFAFC;
 }
 
 form > div:last-of-type {
