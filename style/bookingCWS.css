@@ -174,7 +174,8 @@ a{
 }
 
 .container-cws {
-    background: url("/img/cws-booking.png");
+    /* background: url("/img/cws-booking.png"); */
+    background: url("/img/bgbookingtitle.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 82.4vw;
@@ -188,7 +189,7 @@ a{
 .fashum-text p{
     font-family: 'outfit', sans-serif;
     font-size: 6.5vw;
-    color:white;
+    color: #0060AF;
     font-weight: 500;
     text-shadow: 3px 4px 5.8px rgb(0, 0, 0, 0.25)
 }
