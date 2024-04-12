@@ -5,6 +5,10 @@
     font-family: "Outfit", sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .relative{
     position: relative;
     overflow: hidden;
@@ -178,7 +182,7 @@ a{
     background: url("/img/bgbookingtitle.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 82.4vw;
+    width: 90%;
     height: 25vw;
 }
 
