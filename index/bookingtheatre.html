@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTBLife - Theatre Booking Page</title>
+    <!-- Icon home -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/bookingCWS.css"/>
+    <link rel="stylesheet" href="/style/backbutton.css"/>
+    <link rel="stylesheet" href="/style/navbar.css"/>
+    <script src="/script/bookingtheatre.js" defer></script>
+    <script src="/script/notif.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="relative">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="/img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
+                    <a href="/index/homepage.html">
+                        <img src="/img/home icon.png" alt="home-icon" class="home">
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="/index/bookingmain.html">Booking and Complain</a>
+                    <a href="/index/Rules-Main.html">Rules</a>
+                    <a href="/index/facilityMain-Penghuni.html">Facilities</a>
+                    <a href="/index/np-home.html">Logout</a>
+                    <div class="notif-icon">
+                        <img src="/img/Vector.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+    <div id="slideMenu" class="slide-menu">
+        <div class="menuwrapper">
+            <h2 class="notiftittle">Notifications</h2>
+            <ul>
+                <li>
+                    <img src="/img/insidenotif.png" alt="Notification Icon">
+                    <div class="notification-content">
+                        <p>New rule has been updated.</p>
+                        <p class="notification-date">June 28, 2024</p>
+                    </div>
+                </li>
+                <hr class="notifdivider">
+                <li>
+                    <img src="/img/insidenotif.png" alt="Notification Icon">
+                    <div class="notification-content">
+                        <p>Your complain has been recorded.</p>
+                        <p class="notification-date">June 18, 2024</p>
+                    </div>
+                </li>
+                <hr class="notifdivider">
+                <li>
+                    <img src="/img/insidenotif.png" alt="Notification Icon">
+                    <div class="notification-content">
+                        <p>Your booking request has been approved.</p>
+                        <p class="notification-date">June 10, 2024</p>
+                    </div>
+                </li>
+                <hr class="notifdivider">
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper-back">
+        <div class="container-back">
+            <a href="/index/bookingmain.html" class="back"><img src="/img/back.png" alt="back"></a>
+        </div>
+    </div>
+    
+    <div class="relative">
+        <div class="wrapper d-flex justify-content-center">
+            <div class="container-cws d-flex align-center justify-content-center">
+                <div class="fashum-text">
+                    <p>THEATRE</p>
+                </div>
+            </div>
+        </div>
+        <div class="month-wrapper">
+            <h1 class="text-month">March 2024</h1>
+            <hr class="horizontal-line">
+        </div>
+        
+        <div class="calender-bg">
+            <div class="calender-box"></div>
+        </div>
+
+        <!-- <div class="calender-lines">
+            <div class="calender-line1">
+                <div class="line"></div>
+            </div>
+            <div class="calender-line2">
+                <div class="line1"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div> -->
+        
+
+        <div class="calender-wrapper">
+            <div class="calender-content">
+                <div class="calender-bookings">
+                    <div class="calender-date">
+                        <p>18</p>
+                        <p>Monday</p>
+                        <div class="calender-line1"></div>
+                    </div>
+                    
+                    <div class="detail-container">
+                        <div class="calender-details">
+                            <p class="tutor">PPTI 19 Class Event</p>
+                            <p class="tutor-time">19:00 - 21:00</p>
+                        </div>
+                        <div class="calender-details">
+                            <p class="tutor">Retret 2024 Meeting</p>
+                            <p class="tutor-time">21:00 - 22:00</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="calender-bookings">
+                    <div class="calender-date">
+                        <p>19</p>
+                        <p>Tuesday</p>
+                        <div class="calender-line1"></div>
+                    </div>
+                    
+                    <!-- <div class="calender-details">
+                        <p class="tutor">PPBP 5 Tutor Class</p>
+                        <p class="tutor-time">19:00 - 21:00</p>
+                    </div> -->
+                </div>
+                <div class="calender-bookings">
+                    <div class="calender-date">
+                        <p>29</p>
+                        <p>Wednesday</p>
+                        <div class="calender-line1"></div>
+                    </div>
+                    
+                    <div class="calender-details">
+                        <p class="tutor">MP Bonding</p>
+                        <p class="tutor-time">19:00 - 21:00</p>
+                    </div>
+                </div>
+                <div class="calender-bookings">
+                    <div class="calender-date">
+                        <p>22</p>
+                        <p>Friday</p>
+                        <div class="calender-line1"></div>
+                    </div>
+                    
+                    <!-- <div class="calender-details">
+                        <p class="tutor">Baksos Meeting</p>
+                        <p class="tutor-time">19:00 - 21:00</p>
+                    </div>
+                    <div class="calender-details">
+                        <p class="tutor">PPTI 16 Tutor class</p>
+                        <p class="tutor-time">21:00 - 22:00</p>
+                    </div> -->
+                </div>
+                <div class="calender-bookings">
+                    <div class="calender-date">
+                        <p>23</p>
+                        <p>Saturday</p>
+                        <div class="calender-line1"></div>
+                    </div>
+                    
+                    <div class="calender-details">
+                        <p class="tutor">PPBP 6 Class Event</p>
+                        <p class="tutor-time">19:00 - 21:00</p>
+                    </div>
+                </div>
+                <div class="calender-bookings">
+                    <div class="calender-date">
+                        <p>24</p>
+                        <p>Sunday</p>
+                        <div class="calender-line1"></div>
+                    </div>
+                    
+                    <!-- <div class="calender-details">
+                        <p class="tutor">PPTI 18 Tutor Class</p>
+                        <p class="tutor-time">19:00 - 21:00</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="wrapper-bookform">
+            <form id="form">
+                <div>
+                    <label for="Name">Person Responsible</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="bedaSendiri">
+                    <!-- dropdown -->
+                    <label for="Class">Class</label>
+                    <br>
+                    <div class="dropdown">
+                        <div class="dropdown">
+                            <button type="button" id="dropdown-toggle" class="dropdown-toggle">
+                                <p class="dropdown-text">Select your class</p>  
+                                <img src="/img/vectorcaret.png" class="caret"></img>
+                            </button>
+                        </div>
+                        <div id="dropdown-options" class="dropdown-options">
+                            <button type="button" class="dropdown-option bp3">PPBP 3</button>
+                            <button type="button" class="dropdown-option">PPBP 4</button>
+                            <button type="button" class="dropdown-option">PPTI 14</button>
+                            <button type="button" class="dropdown-option">PPTI 15</button>
+                            <button type="button" class="dropdown-option">PPTI 16</button>
+                            <button type="button" class="dropdown-option">PPBP 5</button>
+                            <button type="button" class="dropdown-option">PPBP 6</button>
+                            <button type="button" class="dropdown-option">PPTI 17</button>
+                            <button type="button" class="dropdown-option">PPTI 18</button>
+                            <button type="button" class="dropdown-option ti19">PPTI 19</button>
+                            <!-- kalo click others harus isi di desc org - purpose -->
+                            <button type="button" class="dropdown-option">Others</button>
+                        </div>
+                    </div> 
+                </div>
+                <div>
+                    <label for="Number of Attendees">Number of Attendees</label>
+                    <br>
+                    <input type="text" id="number" name="NumberofAttendees" required>
+                </div>
+                <div>
+                    <label for="Day and Date">Day and Date</label>
+                    <br>
+                    <input type="date" id="dateInput" required>
+                </div>
+                <div class="time">
+                    <label for="Time-start">Time [Enter time range, e.g., 21.00 - 23.00]</label>
+                    <br>
+                    <div class="start-end">
+                        <input type="time" id="start-time" name="start-time" required>
+                        <p>_</p>
+                        <input type="time" id="end-time" name="end-time" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="Description">Description</label>
+                    <br>
+                    <input type="text" id="des" name="des" required>
+                </div>
+
+                <p id="error"></p>
+                
+                <div>
+                    <button type="submit"class="addf sub" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <p>Copyright © 2020</p>
+        <img src="/img/logoBCA.png" class="footer-img"/>
+        <p>All Right Reserved</p>
+    </div>
+</footer>
+</html>

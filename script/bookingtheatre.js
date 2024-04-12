@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if(isValid){
-      if(totalNum < 20){
+      if(totalNum < 10){
         error.textContent = "The number of attendees does not meet the minimum requirements"
         error.style.color = "red"
         error.style.display = "block"
@@ -130,8 +130,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // ubah durasi dalam bentuk jam
       const hours = Math.floor(duration / (1000 * 60 * 60));
-      if(hours > 2){
-        error.textContent = "Maximum duration for Co-working space booking is 2 hours"
+      if(hours > 3){
+        error.textContent = "Maximum duration for Theatre booking is 3 hours"
         error.style.color = "red"
         error.style.display = "block"
         isValid = false
