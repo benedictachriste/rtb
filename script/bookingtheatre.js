@@ -101,6 +101,15 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
 
+    if(isValid){
+      if(totalNum > 50){
+        error.textContent = "The number of attendees exceeds the maximum requirements."
+        error.style.color = "red"
+        error.style.display = "block"
+        isValid = false
+      }
+    }
+
     // if(isValid){
     //   const parts = date.split('-'); // Pisahkan input tanggal menjadi bagian-bagian (tahun, bulan, tanggal)
     //   const year = parts[0];
