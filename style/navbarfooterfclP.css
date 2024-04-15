@@ -172,9 +172,29 @@
     margin: 10px;
 } */
 
-.footer img{
+/* .footer img{
     width: 6%;
 }
+
+
+.footer{
+  display: flex;
+  width: 100%; */
+  /* position: sticky;  */
+  /* position: fixed;  */
+  /* position: absolute; */
+  /* bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  margin-top: 6.25rem;
+  
+} */
+
+/* .footer p {
+  color: #1F6198;
+  margin: 0.625rem;
+} */
 
 
 .footer{
@@ -192,4 +212,8 @@
 .footer p {
   color: #1F6198;
   margin: 0.625rem;
+}
+
+.footer img{
+  width: 6%;
 }
