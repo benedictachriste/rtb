@@ -8,7 +8,7 @@
 body{
     overflow-x: hidden;
 }
-
+/* 
 .relative{
     position: relative;
     overflow: hidden;
@@ -19,7 +19,7 @@ body{
     flex-direction: row;
     width: 100vw;
     height: 6vw;
-    /* justify-content: space-evenly; */
+   
     background-color: #EEF7FC;
     position: fixed;
     z-index: 5;
@@ -78,14 +78,14 @@ body{
     justify-content: center;
     top: 5vw;
     right: -25vw; 
-    /* to hid the slide menu */
+
     width: 25vw;
     height: 30vw; 
     background-color: #DFEDF5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease-in-out;
     overflow-y: auto; 
-    /* to enable scroll */
+  
   } 
   
   
@@ -150,7 +150,7 @@ body{
 .notifdivider{
     width: 100%;
     border-color: #0060AF;
-} 
+}  */
 
 .wrapper-back{
     margin-bottom: 2vw;
@@ -162,7 +162,7 @@ a{
 
 .wrapper {
     width: 100%;
-    height: 38vh;
+    height: 38vw;
 }
 
 .d-flex {
@@ -247,7 +247,7 @@ a{
 .calender-wrapper{
     width: 100%;
     height: 25vw;
-    margin-top: 18.7vw;
+    margin-top: 1vw;
     margin-bottom: 2vw;
     display: flex;
     justify-content: center;
@@ -478,3 +478,107 @@ form > div:last-of-type {
     margin: 10px;
 }
 
+
+/*Respondsive calendar */
+
+@media screen and (max-width: 480px) {
+
+    .text-month {
+        font-family: 'outfit', sans-serif;
+        height: 6vw;
+        margin-left: 5vw;
+        font-size: 6vw;
+        color: #1F6198;
+        font-weight: 500;
+        margin-bottom: 2.5vw;
+        text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+    }
+/*     
+    .wrapper-bookform{
+        margin-top: 100vw;
+    } */
+
+    .calender-bg{
+        height: 160vw;
+        top: 42vw;
+    }
+    
+    .calender-wrapper{
+        width: 100%;
+        height: 165vw;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        display: flex;
+        justify-content: center;
+        padding: 2.7vw 1.7vw; 
+    }
+
+    .calender-content{
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vw;
+    }
+
+    .calender-bookings{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vw;
+    }
+
+    .calender-date{
+        display: flex;
+        flex: row;
+        width: 50%;
+        height: 40%;
+        align-items: baseline;
+    }
+
+    .calender-date p:first-of-type{
+        font-size: 5vw;
+        width: 20%;
+    }
+
+    .calender-date p:nth-of-type(2){
+        font-size: 5vw;
+        justify-self: flex-start;
+        width: 80%;
+    }
+
+    .calender-line1{
+        width: 100%;
+        height: 0.23vw;
+        background-color: black;
+        margin-top: 0.5vw;
+    }
+
+    
+
+
+    .detail-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* margin */
+    }
+
+    .calender-details .tutor{
+        font-size: 3vw;
+        font-weight: 700;
+        margin-top: 3vw;
+    }
+
+    .calender-details .tutor-time{
+        font-size: 3vw;
+        font-weight: 400;
+    }
+}
+
+/*opsional*/
+@media screen and (max-width: 320px) {
+    
+}

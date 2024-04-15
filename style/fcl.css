@@ -1,3 +1,236 @@
+.relative{
+    position: relative;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 6vw;
+    /* justify-content: space-evenly; */
+    background-color: #EEF7FC;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin-left: 0vw;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.home{
+    width: 3vw;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+    margin-right: 0vw;
+}
+
+.menu a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #0060AF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: #0060AF;
+    transition: text-decoration 0.3s ease;
+}
+
+.menu p{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #EEF7FC;
+    opacity: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.logo-BCA {
+    width: 15vw;
+    height: auto;
+}
+
+.menu img{
+    width: 2vw;
+    height: auto;
+}
+
+/*Hamburger menu*/
+.hamburger-menu{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    height: 7vw;
+    background-color: #EEF7FC;
+    position: relative;
+}
+
+.hamburger-menu input{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 120px;
+    top: 5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.hamburger-menu span{
+    position: relative;
+    left: 123px;
+    margin: 2px;
+    width: 30px;
+    height: 4px;
+    background-color: #0060AF;
+    border-radius: 5px;
+    transition: all 0.5s;
+    z-index: 6;
+}
+
+.hamburger-menu span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.hamburger-menu input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(3px, -5.25px);
+}
+
+.hamburger-menu span:nth-child(4){
+    transform-origin: 0 0;
+}
+
+.hamburger-menu input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(0px, 4.75px);
+}
+
+.hamburger-menu input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+.notif-icon{
+    cursor: pointer;
+}
+
+.slide-menu {
+    z-index: 4;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0 0 0 2vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5vw;
+    right: -25vw; 
+    width: 25vw;
+    height: 10vw; 
+    background-color: #DFEDF5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto; 
+  } 
+
+.bluebutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13vw;
+    height: 4vw;
+    background-color: #0060AF;
+    border-radius: 35px;
+}
+
+.bluebutton a{
+    color: white;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+.fade{
+    width: 100vw;
+    height: 50vw;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+    background: url("/img/building.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: pixelated;
+    animation: fadeInOut 3s infinite alternate;
+}
+
+
+/*Responsive breakpoint*/
+
+/*mobile app*/
+@media screen and (max-width:576px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        height: 7vw;
+        justify-content: space-between;
+    }
+    .hamburger-menu{
+        display: flex;
+        width: 30%;
+    }
+    .menu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 7vw;
+        height: 20vh;
+        width: 100vw;
+        background-color:#EEF7FC;
+        transform: translateY(0);
+        transition: all 1s;
+    }
+    
+    .menu a{
+        font-size: 13px;
+    }
+    .menu p{
+        display: none;
+    }
+
+    
+    
+}
+
 body{
     /* background-image: url("./img/bg_rectangle.png") ; */
     background-size: 100%;
