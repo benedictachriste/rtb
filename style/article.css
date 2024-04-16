@@ -3,17 +3,13 @@
     padding: 0; 
 }
 
-.relative{
-    position: relative;
-    overflow: hidden;
-}
-
 .container-back{
     display: flex;
     align-items: center;
     position: absolute;
     top: 30vw;
     left: 14.5vw;
+    z-index: 0;
 }
 
 .back img{
