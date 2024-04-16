@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style/bookingCWS.css"/>
+    <link rel="stylesheet" href="/style/bookingKitchen.css"/>
     <link rel="stylesheet" href="/style/backbutton.css"/>
     <link rel="stylesheet" href="/style/navbar.css"/>
-    <script src="/script/bookinglaundry.js" defer></script>
+    <script src="/script/bookingkitchen.js" defer></script>
     <script src="/script/notif.js" defer></script>
 </head>
 <body>
@@ -120,12 +120,12 @@
                     
                     <div class="detail-container">
                         <div class="calender-details">
-                            <p class="tutor">PPTI 19 : Jessica</p>
-                            <p class="tutor-time">18:00 - 20:00</p>
+                            <p class="tutor">PPBP 6 : Flo <br>(Air Fryer Halal)</p>
+                            <p class="tutor-time">17:00 - 18:00</p>
                         </div>
                         <div class="calender-details">
-                            <p class="tutor">PPBP 3 : Berlin</p>
-                            <p class="tutor-time">20:00 - 21:00</p>
+                            <p class="tutor">PPBP 3 : Belinda <br>(Stove)</p>
+                            <p class="tutor-time">18:00 - 20:00</p>
                         </div>
                     </div>
                     
@@ -138,8 +138,8 @@
                     </div>
                     
                     <div class="calender-details">
-                        <p class="tutor">PPTI 18 : Ijlal</p>
-                        <p class="tutor-time">19:00 - 21:00</p>
+                        <p class="tutor">PPTI 18 : Richard <br>(Air Fryer Nonhalal)</p>
+                        <p class="tutor-time">17:00 - 19:00</p>
                     </div>
                 </div>
                 <div class="calender-bookings">
@@ -150,7 +150,7 @@
                     </div>
                     
                     <div class="calender-details">
-                        <p class="tutor">PPBP 6 : Dyta</p>
+                        <p class="tutor">PPBP 3 : Jesse <br>(Rice Cooker)</p>
                         <p class="tutor-time">18:00 - 20:00</p>
                     </div>
                 </div>
@@ -162,11 +162,11 @@
                     </div>
                     
                     <div class="calender-details">
-                        <p class="tutor">PPTI 18 : Kiel</p>
-                        <p class="tutor-time">19:00 - 21:00</p>
+                        <p class="tutor">PPTI 19 : Juwita <br>(Air Fryer Halal)</p>
+                        <p class="tutor-time">19:00 - 20:00</p>
                     </div>
                     <div class="calender-details">
-                        <p class="tutor">PPTI 19 : Bened</p>
+                        <p class="tutor">PPTI 14 : Diandra <br>(Air Fryer Nonhalal)</p>
                         <p class="tutor-time">21:00 - 22:00</p>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
                     </div>
                     
                     <div class="calender-details">
-                        <p class="tutor">PPTI 17 : Crysta</p>
+                        <p class="tutor">PPTI 17 : Naomi <br>(Rice Cooker)</p>
                         <p class="tutor-time">19:00 - 21:00</p>
                     </div>
                 </div>
@@ -190,8 +190,8 @@
                     </div>
                     
                     <div class="calender-details">
-                        <p class="tutor">PPTI 17 : Cynthia</p>
-                        <p class="tutor-time">19:00 - 21:00</p>
+                        <p class="tutor">PPTI 16 : Kezia <br>(Stove)</p>
+                        <p class="tutor-time">18:00 - 19:00</p>
                     </div>
                 </div>
             </div>
@@ -232,10 +232,23 @@
                         </div>
                     </div> 
                 </div>
-                <div>
-                    <label for="Number of Attendees">Number of Attendees</label>
+                <div class="bedaSendiri">
+                    <label for="Kitchen Appliance">Kitchen Appliance</label>
                     <br>
-                    <input type="text" id="number" name="NumberofAttendees" required>
+                    <div class="kitchen-dropdown">
+                        <div class="kitchen-dropdown">
+                            <button type="button" id="kitchen-dropdown-toggle" class="kitchen-dropdown-toggle">
+                                <p class="kitchen-dropdown-text">Kitchen Appliance</p>  
+                                <img src="/img/vectorcaret.png" class="caret"></img>
+                            </button>
+                        </div>
+                        <div id="kitchen-dropdown-options" class="kitchen-dropdown-options">
+                            <button type="button" class="kitchen-dropdown-option bp3">Rice Cooker</button>
+                            <button type="button" class="kitchen-dropdown-option">Air Fryer Halal</button>
+                            <button type="button" class="kitchen-dropdown-option">Air Fryer Nonhalal</button>
+                            <button type="button" class="kitchen-dropdown-option ti19">Stove</button>
+                        </div>
+                    </div> 
                 </div>
                 <div>
                     <label for="Day and Date">Day and Date</label>

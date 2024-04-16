@@ -187,8 +187,8 @@ body{
 }
 
 .wrapper > a{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: 3vw;
     /* margin-right: 5vw; */
     border-radius: 50%; 
@@ -202,8 +202,8 @@ body{
 }
 
 .pf_com div{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,8 +217,8 @@ body{
 }
 
 .pf_cws div{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,8 +233,8 @@ body{
 }
 
 .pf_theatre div{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,8 +248,8 @@ body{
 }
 
 .pf_sergun div{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,8 +263,8 @@ body{
 }
 
 .pf_laundry div{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,8 +278,8 @@ body{
 }
 
 .pf_kitchen div{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,7 +290,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     text-shadow:
     1.41px 1.41px black,
     2px 0 black,
