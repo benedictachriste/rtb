@@ -1,0 +1,584 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+/* 
+.relative{
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 6vw;
+   
+    background-color: #EEF7FC;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    margin-left: 0vw;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.home{
+    width: 3vw;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    justify-content: space-around;
+    margin-right: 0vw;
+}
+
+.menu a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #0060AF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.logo-BCA {
+    width: 15vw;
+    height: auto;
+}
+
+.menu img{
+    width: 2vw;
+    height: auto;
+}
+
+.notif-icon{
+    cursor: pointer;
+}
+
+.slide-menu {
+    z-index: 1;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0 0 0 2vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 5vw;
+    right: -25vw; 
+
+    width: 25vw;
+    height: 30vw; 
+    background-color: #DFEDF5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto; 
+  
+  } 
+  
+  
+.menuwrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1vw;
+    color: #0060AF;
+    font-weight: 600;
+    font-size: 0.65em;
+}
+  
+.menuwrapper h2{
+    font-size: 2.2vw;
+    margin-top: 1vw;
+    margin-bottom: 0.7vw;
+}
+  
+.slide-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+  
+.slide-menu ul li {
+    padding-top: 1vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1vw;
+    display: flex;
+}
+
+.slide-menu li{
+    align-items: center;
+}
+  
+.slide-menu ul li img {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1vw;
+}
+  
+.notification-content {
+    flex: 1;
+    font-size: 1.25em;
+}
+
+.notification-content p{
+    margin: 0 auto;
+}
+  
+.notification-date {
+    font-size: 	0.9375em;
+    font-style: italic;
+    font-weight: 400;
+}
+  
+.notifdivider{
+    width: 100%;
+    border-color: #0060AF;
+}  */
+
+.wrapper-back{
+    margin-bottom: 2vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: 38vw;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.container-cws {
+    /* background: url("/img/cws-booking.png"); */
+    background: url("/img/bgbookingtitle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 25vw;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.fashum-text p{
+    font-family: 'outfit', sans-serif;
+    font-size: 6.5vw;
+    color: #0060AF;
+    font-weight: 500;
+    text-shadow: 3px 4px 5.8px rgb(0, 0, 0, 0.25)
+}
+
+.month-wrapper{
+    position: absolute;
+    top: 30vw;
+}
+
+.text-month {
+    font-family: 'outfit', sans-serif;
+    height: 4vw;
+    margin-left: 5vw;
+    font-size: 4.5vw;
+    color: #1F6198;
+    font-weight: 500;
+    margin-bottom: 2.5vw;
+    text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.horizontal-line {
+    width: 89vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.calender-bg{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25vw;
+    justify-content: center;
+    top: 39vw;
+}
+
+.calender-box {
+    background-color: #DFEDF5;
+    width: 90%;
+    height: 100%;
+    z-index: -1;
+}
+
+.calender-line1{
+    width: 80%;
+    height: 0.23vw;
+    background-color: black;
+    margin-top: 0.5vw;
+}
+
+.calender-wrapper{
+    width: 100%;
+    height: 25vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    padding: 2.7vw 1.7vw; 
+}
+
+.calender-content{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.calender-bookings{
+    width: 100%;
+    height: 100%;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.calender-date{
+    height: 40%;
+}
+
+.calender-date p:first-of-type{
+    font-size: 3.4vw;
+}
+
+.calender-date p:nth-of-type(2){
+    font-size: 1.65vw;
+}
+
+.detail-container{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.calender-details .tutor{
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin-top: 2vw;
+}
+
+.calender-details .tutor-time{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+label{
+    font-family: 'poppins', sans-serif;
+}
+
+.wrapper-bookform{
+    margin: 0vw;
+    padding: 1vw;
+    background-color: #ffffff;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    border: 2px solid #e6e6f0;
+    background-color: #FAFAFC;
+}
+
+input[type="date"]{
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 2px solid #e6e6f0;
+    height: 40px;
+    width: 30%;
+    font-family: "Poppins", sans-serif;
+    padding: 0px 10px 0px 10px;
+    background-color: #FAFAFC;
+
+}
+
+input[type="time"]{
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 2px solid #e6e6f0;
+    height: 40px;
+    width: 13.63%;
+    font-family: "Poppins", sans-serif;
+    padding: 0px 10px 0px 10px;
+    background-color: #FAFAFC;
+}
+
+.start-end{
+    display: flex;
+    gap: 1vw;
+}
+
+.bedaSendiri {
+    height : 70.3333333px;
+    margin-bottom: 13px;
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+}
+    
+.dropdown-toggle {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #FAFAFC;
+    border: 2px solid #e6e6f0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+  
+.dropdown-options {
+    display: none;
+    position: absolute;
+    background-color: #FAFAFC;
+    border: none;
+    border-radius: 8px 8px 8px 8px;
+    width: 100%;
+}
+  
+.dropdown-option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.bp3{
+    border-radius: 8px 8px 0 0;
+}
+
+.ti19{
+    border-radius: 0 0 8px 8px;
+}
+  
+.dropdown-option:hover {
+    background-color: #f9f9f9;
+    filter: brightness(90%);
+}
+
+.caret{
+    width: 15px;
+    height: 12px;
+    background-color: transparent;
+}
+
+.des input[type=text] {
+    display: flex;
+    align-content: flex-start;
+    flex-direction : column;
+    align-items: start;
+    text-align: left;
+    height: 100px;
+    border: 2px solid #e6e6f0;
+    background-color: #FAFAFC;
+}
+
+form > div:last-of-type {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.addf{
+    margin-top: 1vw;
+    border: none;
+    box-shadow: 3px 4px 4.7px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.addf:hover{
+    filter: brightness(90%);
+}
+
+.sub{
+    background-color: #0060AF;
+    color: white;
+    height: 35px;
+    width: 120px;
+}
+
+#error{
+    font-size: 1.3vw;
+    color: red;
+    margin-top: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+.footer p {
+    color: #1F6198;
+    margin: 10px;
+}
+
+
+/*Respondsive calendar */
+
+@media screen and (max-width: 480px) {
+
+    .text-month {
+        font-family: 'outfit', sans-serif;
+        height: 6vw;
+        margin-left: 5vw;
+        font-size: 6vw;
+        color: #1F6198;
+        font-weight: 500;
+        margin-bottom: 2.5vw;
+        text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+    }
+/*     
+    .wrapper-bookform{
+        margin-top: 100vw;
+    } */
+
+    .calender-bg{
+        height: 185vw;
+        top: 42vw;
+    }
+    
+    .calender-wrapper{
+        width: 100%;
+        height: 190vw;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        display: flex;
+        justify-content: center;
+        padding: 2.7vw 1.7vw; 
+    }
+
+    .calender-content{
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vw;
+    }
+
+    .calender-bookings{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vw;
+    }
+
+    .calender-date{
+        display: flex;
+        flex: row;
+        width: 50%;
+        height: 40%;
+        align-items: baseline;
+    }
+
+    .calender-date p:first-of-type{
+        font-size: 5vw;
+        width: 20%;
+    }
+
+    .calender-date p:nth-of-type(2){
+        font-size: 5vw;
+        justify-self: flex-start;
+        width: 80%;
+    }
+
+    .calender-line1{
+        width: 100%;
+        height: 0.23vw;
+        background-color: black;
+        margin-top: 0.5vw;
+    }
+
+    
+
+
+    .detail-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* margin */
+    }
+
+    .calender-details .tutor{
+        font-size: 3vw;
+        font-weight: 700;
+        margin-top: 3vw;
+    }
+
+    .calender-details .tutor-time{
+        font-size: 3vw;
+        font-weight: 400;
+    }
+}
+
+/*opsional*/
+@media screen and (max-width: 320px) {
+    
+}
