@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -10,7 +10,7 @@ a {
 
 body{
     background-image: linear-gradient(#FCFFFF ,#DFEDF5);
-}
+} */
 
 /* BACK BUTTON */
 .container-back{

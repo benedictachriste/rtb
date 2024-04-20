@@ -1,4 +1,4 @@
-.relative{
+/* .relative{
     position: relative;
     overflow: hidden;
 }
@@ -18,7 +18,7 @@ a {
     flex-direction: row;
     width: 100vw;
     height: 6vw;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     background-color: #EEF7FC;
     position: fixed;
     z-index: 5;
@@ -79,10 +79,10 @@ a {
 .menu img{
     width: 2vw;
     height: auto;
-}
+} */
 
 /*Hamburger menu*/
-.hamburger-menu{
+/* .hamburger-menu{
     display: none;
     justify-content: center;
     flex-direction: column;
@@ -189,13 +189,13 @@ a {
     background-position: center;
     image-rendering: pixelated;
     animation: fadeInOut 3s infinite alternate;
-}
+} */
 
 
 /*Responsive breakpoint*/
 
 /*mobile app*/
-@media screen and (max-width:576px){
+/* @media screen and (max-width:576px){
     .navbar{
         display: flex;
         align-items: center;
@@ -232,7 +232,7 @@ a {
     }
     
     
-}
+} */
 
 body{
     /* background-image: url("./img/bg_rectangle.png") ; */
