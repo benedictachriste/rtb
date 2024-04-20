@@ -195,44 +195,8 @@ a {
 /*Responsive breakpoint*/
 
 /*mobile app*/
-/* @media screen and (max-width:576px){
-    .navbar{
-        display: flex;
-        align-items: center;
-        height: 7vw;
-        justify-content: space-between;
-    }
-    .hamburger-menu{
-        display: flex;
-        width: 30%;
-    }
-    .menu{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        top: 7vw;
-        height: 20vh;
-        width: 100vw;
-        background-color:#EEF7FC;
-        transform: translateY(0);
-        transition: all 1s;
-    }
-    
-    .menu a{
-        font-size: 13px;
-    }
-    .menu p{
-        display: none;
-    }
-
-    footer{
-        bottom:0;
-    }
-    
-    
-} */
+/* 
+ */
 
 body{
     /* background-image: url("./img/bg_rectangle.png") ; */

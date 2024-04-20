@@ -19,23 +19,34 @@
     <!-- COPY NAVBAR -->
     <header>
         <div class="relative">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="/img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
-                    <a href="/index/homepage.html">
-                        <img src="/img/home icon.png" alt="home-icon" class="home">
-                    </a>
-                </div>
-                <div class="menu">
-                    <a href="/index/bookingmain.html">Booking and Complain</a>
-                    <a href="/index/Rules-Main.html">Rules</a>
-                    <a href="/index/facilityMain-Penghuni.html">Facilities</a>
-                    <a href="/index.html">Logout</a>
-                    <div class="notif-icon">
-                        <img src="/img/Vector.png">
+            <nav class="nav-wrapper">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="/img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
+                        <a href="/index.html">
+                            <img src="/img/home icon.png" alt="home-icon" class="home">
+                        </a>
+                    </div>
+                    <div class="menu-wrapper">
+                        <div class="menu" id="menu" onclick="dropDown()">
+                            <a href="/index/bookingmain.html">Booking and Complain</a>
+                            <a href="/index/Rules-Main.html">Rules</a>
+                            <a href="/index/facilityMain-Penghuni.html">Facilities</a>
+                            <a href="/index.html">Logout</a>
+                        </div>
+                        <div class="notif-icon">
+                            <img src="/img/Vector.png">
+                        </div>
+                    </div>
+                    
+                    <div class="hamburger-menu onclick" id="menu-toggle" onclick="hamburgerMenu()">
+                        <input type="checkbox">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     
@@ -312,5 +323,6 @@
         </div>
     </footer>
 <script src="/script/bookingmain.js" defer></script>
+<script src="/script/navbar.js" defer></script>
 </body>
 </html>

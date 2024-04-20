@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="/style/np-home.css">
     <link rel="stylesheet" href="/style/facilityMain-NP.css">
     <script src="/script/notif.js" defer></script>
+    <script src="/script/navbar.js" defer></script>
 </head>
 <body>
     <div class="relative">
-        <header>
+        <nav class="nav-wrapper">
             <div class="navbar">
                 <div class="logo">
                     <img src="/img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
@@ -23,23 +24,27 @@
                         <img src="/img/home icon.png" alt="home-icon" class="home">
                     </a>
                 </div>
-                <div class="menu">
-                    <p>Book and Complain</p>
-                    <p>Rules</p>
-                    <a href="/index/facilityMain-NP.html">Facilities</a>
-                    <a href="/index/login.html">Login</a>
+                <div class="menu-wrapper">
+                    <div class="menu" id="menu" onclick="dropDown()">
+                        <p>Book and Complain</p>
+                        <p>Rules</p>
+                        <a href="/index/facilityMain-NP.html">Facilities</a>
+                        <a href="/index/login.html">Login</a>
+                    </div>
                     <div class="notif-icon">
                         <img src="/img/Vector.png">
                     </div>
                 </div>
-            </div>
-    
-            <div id="slideMenu" class="slide-menu">
-                <div class="bluebutton">
-                    <a href="/index/login.html">Login</a>
+                
+                <div class="hamburger-menu onclick" id="menu-toggle" onclick="hamburgerMenu()">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-        </header>
+        </nav>
+    </div>
     
         <div id="slideMenu" class="slide-menu">
             <div class="menuwrapper">
@@ -177,7 +182,7 @@
         <div>
             <script src="/script/bookingmain.js" defer></script>
         </div>
-    </div>
+    
     <footer>
         <div class="footer">
             <p>Copyright © 2020</p>
