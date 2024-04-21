@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // const numRegex = /^\d+$/
     if(isValid){
-      if(className == "Kitchen Appliance"){
+      if(kitchenApl == "Kitchen Appliance"){
         error.textContent = "Please select kitchen appliance"
         error.style.display = "block"
         error.style.color = "red"
