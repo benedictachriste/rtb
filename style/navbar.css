@@ -1,6 +1,7 @@
 .relative{
     position: relative;
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 .navbar {
