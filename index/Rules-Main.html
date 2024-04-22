@@ -1,4 +1,4 @@
-..<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,105 +14,104 @@
     <script src="../script/navbar.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="relative">
-            <nav class="nav-wrapper">
-                <div class="navbar">
-                    <div class="logo">
-                        <img src="../img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
-                        <a href="homepage.html">
-                            <img src="../img/home icon.png" alt="home-icon" class="home">
-                        </a>
+    <div class="relative">
+        <nav class="nav-wrapper">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../img/Logo BCA_Biru.png" alt="logo-BCA" class="logo-BCA">
+                    <a href="homepage.html">
+                        <img src="../img/home icon.png" alt="home-icon" class="home">
+                    </a>
+                </div>
+                <div class="menu-wrapper">
+                    <div class="menu" id="menu" onclick="dropDown()">
+                        <a href="bookingmain.html">Booking and Complain</a>
+                        <a href="Rules-Main.html">Rules</a>
+                        <a href="facilityMain-Penghuni.html">Facilities</a>
+                        <a href="../index.html">Logout</a>
                     </div>
-                    <div class="menu-wrapper">
-                        <div class="menu" id="menu" onclick="dropDown()">
-                            <a href="bookingmain.html">Booking and Complain</a>
-                            <a href="Rules-Main.html">Rules</a>
-                            <a href="facilityMain-Penghuni.html">Facilities</a>
-                            <a href="../index.html">Logout</a>
-                        </div>
-                        <div class="notif-icon">
-                            <img src="../img/Vector.png">
-                        </div>
-                    </div>
-                    
-                    <div class="hamburger-menu onclick" id="menu-toggle" onclick="hamburgerMenu()">
-                        <input type="checkbox">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="notif-icon">
+                        <img src="../img/Vector.png">
                     </div>
                 </div>
-            </nav>
-        </div>
-      </header>
+                
+                <div class="hamburger-menu onclick" id="menu-toggle" onclick="hamburgerMenu()">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    
       
-      <div id="slideMenu" class="slide-menu">
-          <div class="menuwrapper">
-              <h2 class="notiftittle">Notifications</h2>
-              <ul>
-                  <li>
-                      <img src="../img/insidenotif.png" alt="Notification Icon">
-                      <div class="notification-content">
-                          <p>New rule has been updated.</p>
-                          <p class="notification-date">June 28, 2024</p>
-                      </div>
-                  </li>
-                  <hr class="notifdivider">
-                  <li>
-                      <img src="../img/insidenotif.png" alt="Notification Icon">
-                      <div class="notification-content">
-                          <p>Your complain has been recorded.</p>
-                          <p class="notification-date">June 18, 2024</p>
-                      </div>
-                  </li>
-                  <hr class="notifdivider">
-                  <li>
-                      <img src="../img/insidenotif.png" alt="Notification Icon">
-                      <div class="notification-content">
-                          <p>Your booking request has been approved.</p>
-                          <p class="notification-date">June 10, 2024</p>
-                      </div>
-                  </li>
-                  <hr class="notifdivider">
-              </ul>
-          </div>
-      </div>
-
-    <div class="wrapper">
-        <div class="title-page">
-            <h1>RUMAH TALENTA BCA RULES</h1>
+        <div id="slideMenu" class="slide-menu">
+            <div class="menuwrapper">
+                <h2 class="notiftittle">Notifications</h2>
+                <ul>
+                    <li>
+                        <img src="../img/insidenotif.png" alt="Notification Icon">
+                        <div class="notification-content">
+                            <p>New rule has been updated.</p>
+                            <p class="notification-date">June 28, 2024</p>
+                        </div>
+                    </li>
+                    <hr class="notifdivider">
+                    <li>
+                        <img src="../img/insidenotif.png" alt="Notification Icon">
+                        <div class="notification-content">
+                            <p>Your complain has been recorded.</p>
+                            <p class="notification-date">June 18, 2024</p>
+                        </div>
+                    </li>
+                    <hr class="notifdivider">
+                    <li>
+                        <img src="../img/insidenotif.png" alt="Notification Icon">
+                        <div class="notification-content">
+                            <p>Your booking request has been approved.</p>
+                            <p class="notification-date">June 10, 2024</p>
+                        </div>
+                    </li>
+                    <hr class="notifdivider">
+                </ul>
+            </div>
         </div>
-        <div class="all-ellipse">
-            <div class="ellipse">
-                <a href="rules-general.html">
-                    <div class="container-ellipse">
-                        <img src="../img/ellipse-rulesmain.png" alt=""/> 
-                        <div class="container-name">
-                            <h1>GENERAL RULES</h1>
-                        </div> 
-                    </div>
-                </a>
+
+        <div class="wrapper">
+            <div class="title-page">
+                <h1>RUMAH TALENTA BCA RULES</h1>
             </div>
-            <div class="ellipse">
-                <a href="rules-public.html">
-                    <div class="container-ellipse2">
-                        <img src="../img/ellipse-rulesmain.png" alt=""/> 
-                        <div class="container-name">
-                            <h1>PUBLIC FACILITIES</h1>
-                        </div> 
-                    </div>
-                </a>
-            </div>
-            <div class="ellipse">
-                <a href="rules-bedroom.html">
-                    <div class="container-ellipse3">
-                        <img src="../img/ellipse-rulesmain.png" alt=""/> 
-                        <div class="container-name">
-                            <h1>BEDROOM & CLUSTER</h1>
-                        </div> 
-                    </div>
-                </a>
+            <div class="all-ellipse">
+                <div class="ellipse">
+                    <a href="rules-general.html">
+                        <div class="container-ellipse">
+                            <img src="../img/ellipse-rulesmain.png" alt=""/> 
+                            <div class="container-name">
+                                <h1>GENERAL RULES</h1>
+                            </div> 
+                        </div>
+                    </a>
+                </div>
+                <div class="ellipse">
+                    <a href="rules-public.html">
+                        <div class="container-ellipse2">
+                            <img src="../img/ellipse-rulesmain.png" alt=""/> 
+                            <div class="container-name">
+                                <h1>PUBLIC FACILITIES</h1>
+                            </div> 
+                        </div>
+                    </a>
+                </div>
+                <div class="ellipse">
+                    <a href="rules-bedroom.html">
+                        <div class="container-ellipse3">
+                            <img src="../img/ellipse-rulesmain.png" alt=""/> 
+                            <div class="container-name">
+                                <h1>BEDROOM & CLUSTER</h1>
+                            </div> 
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
