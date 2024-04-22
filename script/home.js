@@ -1,4 +1,4 @@
-const image = ["../img/building.jpg", "../img/building2.png", "../img/building3.png"]
+const image = ["img/building.jpg", "img/building2.png", "img/building3.png"]
 const imageDiv = document.querySelector(".wrapper")
 let currIdx = 0
 
