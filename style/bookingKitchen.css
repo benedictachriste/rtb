@@ -179,7 +179,7 @@ a{
 
 .container-cws {
     /* background: url("/img/cws-booking.png"); */
-    background: url("/img/bgbookingtitle.png");
+    background: url("../img/bgbookingtitle.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 90%;
