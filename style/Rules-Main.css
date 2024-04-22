@@ -14,59 +14,9 @@ body{
     justify-content: space-between;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 6vw;
-    /* justify-content: space-evenly; */
-    background-color: #EEF7FC;
-    position: fixed;
-    z-index: 5;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    width: 30vw;
-    margin-left: 0vw;
-    justify-content: space-around;
-    overflow: hidden;
-}
-
-.home{
-    width: 3vw;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    width: 70vw;
-    justify-content: space-around;
-    margin-right: 0vw;
-}
-
-.menu a {
-    font-size: 1.5vw;
-    text-decoration: none;
-    color: #0060AF;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.logo-BCA {
-    width: 15vw;
-    height: auto;
-}
-
 .menu img{
     width: 2vw;
     height: auto;
-}
-
-.notif-icon{
-    cursor: pointer;
 }
 
 .slide-menu {
