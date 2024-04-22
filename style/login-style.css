@@ -13,7 +13,7 @@ border dkk pake px
 
 body{
     font-family: "Poppins", sans-serif;  
-    background: url("/img/bg_logo.png"), linear-gradient(#FCFFFF ,#DFEDF5);
+    background: url("../img/bg_logo.png"), linear-gradient(#FCFFFF ,#DFEDF5);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-attachment: scroll;
