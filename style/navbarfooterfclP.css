@@ -217,3 +217,9 @@
 .footer img{
   width: 6%;
 }
+
+@media screen and (max-width : 820px) {
+  .footer {
+    margin-top : 180vh;
+  }
+}

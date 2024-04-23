@@ -207,6 +207,9 @@ body{
     height: fit-content;
     margin: 0;
     overflow-x: hidden;
+    min-height : 100vh;
+    display : flex;
+    flex-direction : column;
 }
 
 .bg{
@@ -305,7 +308,7 @@ body{
 
 .description{
     display: flex;
-    width: 640px;
+    width: 50vw;
     /* font-size: 1.875em; */
     font-size: 1.875vw;
     font-family: "Outfit", sans-serif;
@@ -325,4 +328,54 @@ body{
 
 a:link{
     text-decoration: none;
+}
+
+@media screen and(max-width: 1300){
+    /* .desc{
+        width: 10vw !important;
+    } */
+
+    /* .description{
+        width: 5vw;
+    } */
+
+    .description {
+        height : 1000vw;
+        width: 5vw;
+    }
+}
+
+@media screen and (max-width : 820px) {
+    .facilities {
+        width : 100% !important;
+        flex-direction: column;
+    }
+    .facilities-wrap {
+        width: 100vw !important;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .image {
+        margin-left : 0;
+    }
+
+    .desc {
+        width : 50vw; 
+        margin-left: 25vw !important;
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;   
+    }
+    .list {
+        width: 100% !important;
+    }
+
+    .description {
+        height : 10vw;
+        width: 50vw;
+    }
 }
