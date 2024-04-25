@@ -21,11 +21,13 @@ document.addEventListener("DOMContentLoaded", function() {
     toggle.addEventListener("click", function() {
       const dropdownOptions = document.getElementById("dropdown-options");
       dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block";
+      toggleText.style.color = "#93969A"
     });
   
     options.forEach(function(option) {
       option.addEventListener("click", function() {
         toggleText.textContent = option.textContent;
+        toggleText.style.color = "black"
         toggle.style.backgroundColor = "#E8F0FE";
         document.getElementById("dropdown-options").style.display = "none";
       });
@@ -39,11 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
     kitchenToggle.addEventListener("click", function() {
         const kitchenDDOpt = document.getElementById("kitchen-dropdown-options"); 
         kitchenDDOpt.style.display = kitchenDDOpt.style.display === "block" ? "none" : "block";
+        toggleText.style.color = "#93969A";
     });
 
     kitchenOpt.forEach(function(kitchenOpt) {
         kitchenOpt.addEventListener("click", function() {
             kitchenToggleText.textContent = kitchenOpt.textContent;
+            kitchenToggleText.style.color = "black";
             kitchenToggle.style.backgroundColor = "#E8F0FE";
             document.getElementById("kitchen-dropdown-options").style.display = "none";
         });
@@ -164,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // if user click others, then purpose must use format : Organization name - purpose
     if(isValid && className == "Others"){
         if(!purpose.includes('-')){
-          error.textContent = "Purpose must be (organization) - (purpose)";
+          error.textContent = "Description must be (organization) - (purpose)";
           error.style.display = "block";
           isValid = false;
         }

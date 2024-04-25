@@ -31,11 +31,13 @@ document.addEventListener("DOMContentLoaded", function() {
   toggle.addEventListener("click", function() {
     const dropdownOptions = document.getElementById("dropdown-options")
     dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block"
+    toggleText.style.color = "#93969A"
   })
 
   options.forEach(function(option) {
     option.addEventListener("click", function() {
       toggleText.textContent = option.textContent
+      toggleText.style.color = "black"
       toggle.style.backgroundColor = "#E8F0FE"
       document.getElementById("dropdown-options").style.display = "none"
     })
