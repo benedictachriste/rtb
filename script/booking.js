@@ -103,21 +103,42 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
 
-    // if(isValid){
-    //   const parts = date.split('-'); // Pisahkan input tanggal menjadi bagian-bagian (tahun, bulan, tanggal)
-    //   const year = parts[0];
-    //   const month = parts[1];
-    //   const day = parts[2];
+    // Dapatkan elemen input tanggal
+    var dateInput = document.getElementById('dateInput');
 
-      // asumsi CWS only available on Saturday, 23rd March 2024
-      // if (year == '2024' && month == '03' && day == '23') {
-      //   isValid = true;
-      // } else {
-      //   error.textContent = "Please choose another date because Co-Working space is full"
-      //   error.style.display = "block"
-      //   isValid = false
-      // }
-    // }
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; 
+    var yyyy = today.getFullYear();
+
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+
+    var minDate = yyyy + '-' + mm + '-' + dd;
+
+    var maxDate = new Date(today);
+    maxDate.setDate(today.getDate() + 7);
+    var maxDd = maxDate.getDate();
+    var maxMm = maxDate.getMonth() + 1;
+    var maxYyyy = maxDate.getFullYear();
+
+    if (maxDd < 10) {
+        maxDd = '0' + maxDd;
+    }
+    if (maxMm < 10) {
+        maxMm = '0' + maxMm;
+    }
+
+    // Tanggal maksimum dalam format YYYY-MM-DD
+    var maxDateString = maxYyyy + '-' + maxMm + '-' + maxDd;
+
+    // Atur nilai min dan max untuk input tanggal
+    dateInput.setAttribute('min', minDate);
+    dateInput.setAttribute('max', maxDateString);
 
     // asumsi available di semua jam dan hanya dapat di booking maksimal 2 jam
     if(isValid){
@@ -125,9 +146,13 @@ document.addEventListener("DOMContentLoaded", function() {
       const [endHour, endMinute] = end.split(':').map(Number);
 
       // date in java --> untuk melakukan perhitungan durasi atau selisih waktu antara waktu mulai dan waktu selesai.
-      const startDate = new Date(0, 0, 0, startHour, startHour)
+      const startDate = new Date(0, 0, 0, startHour, startMinute)
       const endDate = new Date(0, 0, 0, endHour, endMinute)
 
+      if(endHour < startHour || (endHour === startHour && startMinute === endMinute)){
+        endDate.setDate(endDate.getDate()+1);
+      }
+      
       const duration = endDate - startDate
 
       // ubah durasi dalam bentuk jam
