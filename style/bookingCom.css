@@ -162,7 +162,7 @@ a{
 
 .wrapper {
     width: 100%;
-    height: 38vw;
+    height: 18vw;
 }
 
 .d-flex {
@@ -183,7 +183,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     width: 90%;
-    height: 25vw;
+    height: 10vw;
 }
 
 .w-100 {
@@ -192,7 +192,7 @@ a{
 
 .fashum-text p{
     font-family: 'outfit', sans-serif;
-    font-size: 6.5vw;
+    font-size: 4vw;
     color: #0060AF;
     font-weight: 500;
     text-shadow: 3px 4px 5.8px rgb(0, 0, 0, 0.25)
@@ -200,14 +200,14 @@ a{
 
 .month-wrapper{
     position: absolute;
-    top: 30vw;
+    top: 13vw;
 }
 
 .text-month {
     font-family: 'outfit', sans-serif;
-    height: 4vw;
+    height: 2vw;
     margin-left: 5vw;
-    font-size: 4.5vw;
+    font-size: 3vw;
     color: #1F6198;
     font-weight: 500;
     margin-bottom: 2.5vw;
@@ -227,7 +227,7 @@ a{
     width: 100%;
     height: 25vw;
     justify-content: center;
-    top: 39vw;
+    top: 20vw;
 }
 
 .calender-box {
@@ -274,15 +274,16 @@ a{
 }
 
 .calender-date p:first-of-type{
-    font-size: 3.4vw;
+    font-size: 2.7vw;
 }
 
 .calender-date p:nth-of-type(2){
-    font-size: 1.65vw;
+    font-size: 2vw;
 }
 
 .detail-container{
-    height: 60%;
+    width: 80%;
+    height: 65%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -291,7 +292,7 @@ a{
 .calender-details .tutor{
     font-size: 1.2vw;
     font-weight: 700;
-    margin-top: 2vw;
+    margin-top: 1.2vw;
 }
 
 .calender-details .tutor-time{
@@ -491,6 +492,21 @@ form > div:last-of-type {
 /*Respondsive calendar */
 
 @media screen and (max-width: 480px) {
+    .wrapper {
+        height: 26vw;
+    }
+
+    .container-cws {
+        height: 15vw;
+    }
+
+    .fashum-text p{
+        font-size: 6vw;
+    }
+
+    .month-wrapper{
+        top: 17vw;
+    }
 
     .text-month {
         font-family: 'outfit', sans-serif;
@@ -508,8 +524,8 @@ form > div:last-of-type {
     } */
 
     .calender-bg{
-        height: 185vw;
-        top: 42vw;
+        height: 190vw;
+        top: 28vw;
     }
     
     .calender-wrapper{
@@ -542,7 +558,7 @@ form > div:last-of-type {
         display: flex;
         flex: row;
         width: 50%;
-        height: 40%;
+        height: 65%;
         align-items: baseline;
     }
 
