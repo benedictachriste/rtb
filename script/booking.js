@@ -83,14 +83,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const numRegex = /^\d+$/
 
-    if(isValid){
-      if(!numRegex.test(totalNum)){
-        error.textContent = "Number of attendees should contain numbers only"
-        error.style.display = "block"
-        error.style.color = "red"
-        isValid = false
-      }
-    }
+    // if(isValid){
+    //   if(!numRegex.test(totalNum)){
+    //     error.textContent = "Number of attendees should contain numbers only"
+    //     error.style.display = "block"
+    //     error.style.color = "red"
+    //     isValid = false
+    //   }
+    // }
 
     if(isValid){
       if(totalNum < 20){
