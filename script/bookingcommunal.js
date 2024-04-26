@@ -20,11 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
     toggle.addEventListener("click", function() {
       const dropdownOptions = document.getElementById("dropdown-options")
       dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block"
+      toggleText.style.color = "#93969A"
     })
   
     options.forEach(function(option) {
       option.addEventListener("click", function() {
         toggleText.textContent = option.textContent
+        toggleText.style.color = "black"
         toggle.style.backgroundColor = "#E8F0FE"
         document.getElementById("dropdown-options").style.display = "none"
       })
@@ -94,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(isValid){
       if(totalNum < 10){
-        error.textContent = "The number of attendees does not meet the minimum requirements"
+        error.textContent = "The number of attendees does not meet the minimum requirements (10)"
         error.style.color = "red"
         error.style.display = "block"
         isValid = false
@@ -131,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // ubah durasi dalam bentuk jam
       const hours = Math.floor(duration / (1000 * 60 * 60));
       if(hours > 2){
-        error.textContent = "Maximum duration for Co-working space booking is 2 hours"
+        error.textContent = "Maximum duration for Communal booking is 2 hours"
         error.style.color = "red"
         error.style.display = "block"
         isValid = false
@@ -141,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // if user click others, then purpose must use format : Organization name - purpose
     if(isValid && className == "Others"){
         if(!purpose.includes('-')){
-          error.textContent = "Purpose must be (organization) - (purpose)";
+          error.textContent = "Description must be (organization name) - (purpose)";
           error.style.display = "block";
           isValid = false;
         }

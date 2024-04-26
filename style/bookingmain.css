@@ -156,6 +156,12 @@ select{
     margin-bottom: 15px;
 }
 
+::placeholder {
+    font-family: "Poppins", sans-serif;
+    color:#93969A;
+    padding-left: 10px;
+}
+
 .addf{
     margin-top: 1vw;
     border: none;
@@ -336,6 +342,7 @@ form > div:last-of-type {
 
 .dropdown-toggle {
     font-family: "Poppins", sans-serif;
+    color:#93969A;
     padding: 10px;
     border: none;
     border-radius: 8px;
