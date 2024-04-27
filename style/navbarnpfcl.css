@@ -7,9 +7,9 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 6vw;
+    height: 5.5vw;
     /* justify-content: space-evenly; */
-    background-color: #EEF7FC;
+    background-color: #DFEDF5;
     position: fixed;
     z-index: 5;
 }
@@ -43,7 +43,7 @@
 }
 
 .menu a {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     text-decoration: none;
     color: #0060AF;
     font-family: "Poppins", sans-serif;
@@ -83,6 +83,7 @@
 .notif-icon img{
   width: 2vw;
   height: auto;
+  display: none;
 }
 
 /*Hamburger Menu*/

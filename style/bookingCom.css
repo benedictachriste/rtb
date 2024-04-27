@@ -2,11 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
 }
 
 body{
     overflow-x: hidden;
+    font-family: "Outfit", sans-serif;
 }
 /* 
 .relative{
@@ -292,7 +292,7 @@ a{
 .calender-details .tutor{
     font-size: 1.2vw;
     font-weight: 700;
-    margin-top: 1.2vw;
+    margin-top: 0.7vw;
 }
 
 .calender-details .tutor-time{
@@ -524,13 +524,13 @@ form > div:last-of-type {
     } */
 
     .calender-bg{
-        height: 190vw;
+        height: 220vw;
         top: 28vw;
     }
     
     .calender-wrapper{
         width: 100%;
-        height: 190vw;
+        height: 220vw;
         margin-top: 1vw;
         margin-bottom: 2vw;
         display: flex;
