@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('start-time').value = ""
       document.getElementById('end-time').value = ""
       document.querySelector('.dropdown-text').textContent = "Select your class"
-      toggle.style.backgroundColor = "white"
+      toggle.style.backgroundColor = "#FAFAFC"
       toggleText.style.color = "#93969A"
       error.textContent = "Your booking request has been recorded"
       error.style.color = "#0060AF"
