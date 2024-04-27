@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
     kitchenToggle.addEventListener("click", function() {
         const kitchenDDOpt = document.getElementById("kitchen-dropdown-options"); 
         kitchenDDOpt.style.display = kitchenDDOpt.style.display === "block" ? "none" : "block";
-        toggleText.style.color = "#93969A";
+        kitchenToggleText.style.color = "#93969A";
     });
 
     kitchenOpt.forEach(function(kitchenOpt) {
