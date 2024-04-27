@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const end = document.getElementById('end-time').value
 
     const toggle = document.getElementById("dropdown-toggle")
+    const toggleText = document.querySelector(".dropdown-text")
+
 
     const nameRegex = /^[a-zA-Z\s]*$/
 
@@ -158,6 +160,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('end-time').value = ""
       document.querySelector('.dropdown-text').textContent = "Select your class"
       toggle.style.backgroundColor = "white"
+      toggleText.style.color = "#93969A"
       error.textContent = "Your booking request has been recorded"
       error.style.color = "#0060AF"
       error.style.display = "block"

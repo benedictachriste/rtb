@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const desEl = document.getElementById("des")
 
       const toggle = document.getElementById("dropdown-toggle")
+      const toggleText = document.querySelector(".dropdown-text")
 
       const namee = nameEl.value
       const className = classEl.textContent
@@ -137,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
         desEl.value = ""
         classEl.textContent = "Select your class"
         toggle.style.backgroundColor = "white"
+        toggleText.style.color = "#93969A"
         facilityEl.value = ""
         error.textContent = "Your complain has been recorded"
         error.style.color = "#0060AF"
