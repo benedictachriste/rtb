@@ -39,15 +39,54 @@ document.addEventListener("DOMContentLoaded", function() {
     })
   })
 
- document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function(){
   const subButton = document.getElementById('submit')
+
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth() + 1;
+  var yyyy = today.getFullYear();
+
+  // Format tanggal agar sesuai dengan format HTML
+  if (dd < 10) {
+      dd = '0' + dd;
+  }
+  if (mm < 10) {
+      mm = '0' + mm;
+  }
+
+  // Tanggal hari ini dalam format YYYY-MM-DD
+  var minDate = yyyy + '-' + mm + '-' + dd;
+
+  // Tanggal maksimum adalah 7 hari ke depan
+  var maxDate = new Date(today);
+  maxDate.setDate(today.getDate() + 7);
+  var maxDd = maxDate.getDate();
+  var maxMm = maxDate.getMonth() + 1;
+  var maxYyyy = maxDate.getFullYear();
+
+  // Format tanggal maksimum agar sesuai dengan format HTML
+  if (maxDd < 10) {
+      maxDd = '0' + maxDd;
+  }
+  if (maxMm < 10) {
+      maxMm = '0' + maxMm;
+  }
+
+  // Tanggal maksimum dalam format YYYY-MM-DD
+  var maxDateString = maxYyyy + '-' + maxMm + '-' + maxDd;
+
+  // Atur nilai min dan max untuk input tanggal
+  dateInput.min = minDate;
+  dateInput.max = maxDateString;
+
   subButton.addEventListener("click", function(x){
     x.preventDefault()
 
     const name = document.getElementById('name').value
     const className = document.querySelector('.dropdown-text').textContent
     const totalNum = document.getElementById('number').value
-    const date = document.getElementById('dateInput').value
+    const date = document.getElementById('dateInput');
     const purpose = document.getElementById('des').value
     const start = document.getElementById('start-time').value
     const end = document.getElementById('end-time').value
@@ -103,42 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
 
-    // Dapatkan elemen input tanggal
-    var dateInput = document.getElementById('dateInput');
-
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1; 
-    var yyyy = today.getFullYear();
-
-    if (dd < 10) {
-        dd = '0' + dd;
-    }
-    if (mm < 10) {
-        mm = '0' + mm;
-    }
-
-    var minDate = yyyy + '-' + mm + '-' + dd;
-
-    var maxDate = new Date(today);
-    maxDate.setDate(today.getDate() + 7);
-    var maxDd = maxDate.getDate();
-    var maxMm = maxDate.getMonth() + 1;
-    var maxYyyy = maxDate.getFullYear();
-
-    if (maxDd < 10) {
-        maxDd = '0' + maxDd;
-    }
-    if (maxMm < 10) {
-        maxMm = '0' + maxMm;
-    }
-
-    // Tanggal maksimum dalam format YYYY-MM-DD
-    var maxDateString = maxYyyy + '-' + maxMm + '-' + maxDd;
-
-    // Atur nilai min dan max untuk input tanggal
-    dateInput.setAttribute('min', minDate);
-    dateInput.setAttribute('max', maxDateString);
+    
 
     // asumsi available di semua jam dan hanya dapat di booking maksimal 2 jam
     if(isValid){
@@ -164,6 +168,8 @@ document.addEventListener("DOMContentLoaded", function() {
         isValid = false
       }
     }
+    
+    
 
     // if user click others, then purpose must use format : Organization name - purpose
     if(isValid && className == "Others"){
@@ -182,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('start-time').value = ""
       document.getElementById('end-time').value = ""
       document.querySelector('.dropdown-text').textContent = "Select your class"
-      toggle.style.backgroundColor = "white"
+      toggle.style.backgroundColor = "#FAFAFC"
       error.textContent = "Your booking request has been recorded"
       error.style.color = "#0060AF"
       error.style.display = "block"

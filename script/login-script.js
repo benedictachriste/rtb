@@ -16,16 +16,22 @@ function validateForm(e){
         errorElement.innerHTML = "Password is required";
         return false;
     }
-    if(username.value != "penghuni.rtb" || password.value != "penghuni123"){
+    if (username.value === "penghuni.rtb" && password.value === "penghuni123") {
+        alert("You have successfully logged in.");
+        // displayText();
+        // location.reload();
+        errorElement.innerHTML = ''; 
+    
+        location.href = "homepage.html";
+    
+        return true;
+    }
+    else if(username.value != "penghuni.rtb" || password.value != "penghuni123"){
         errorElement.innerHTML = "Username or password wrong";
         return false;
     }
 
-    errorElement.innerHTML = ''; 
-    
-    location.href = "homepage.html";
-
-    return true;
+   
 }
 
 
