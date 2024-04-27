@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const name = document.getElementById('name').value
     const className = document.querySelector('.dropdown-text').textContent
     const totalNum = document.getElementById('number').value
-    const date = document.getElementById('dateInput');
+    const date = document.getElementById('dateInput')
     const purpose = document.getElementById('des').value
     const start = document.getElementById('start-time').value
     const end = document.getElementById('end-time').value
@@ -141,8 +141,6 @@ document.addEventListener("DOMContentLoaded", function(){
         isValid = false
       }
     }
-
-    
 
     // asumsi available di semua jam dan hanya dapat di booking maksimal 2 jam
     if(isValid){

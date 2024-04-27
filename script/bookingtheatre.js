@@ -42,6 +42,45 @@ document.addEventListener("DOMContentLoaded", function() {
 
  document.addEventListener("DOMContentLoaded", function(){
   const subButton = document.getElementById('submit')
+
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth() + 1;
+  var yyyy = today.getFullYear();
+
+  // Format tanggal agar sesuai dengan format HTML
+  if (dd < 10) {
+      dd = '0' + dd;
+  }
+  if (mm < 10) {
+      mm = '0' + mm;
+  }
+
+  // Tanggal hari ini dalam format YYYY-MM-DD
+  var minDate = yyyy + '-' + mm + '-' + dd;
+
+  // Tanggal maksimum adalah 7 hari ke depan
+  var maxDate = new Date(today);
+  maxDate.setDate(today.getDate() + 7);
+  var maxDd = maxDate.getDate();
+  var maxMm = maxDate.getMonth() + 1;
+  var maxYyyy = maxDate.getFullYear();
+
+  // Format tanggal maksimum agar sesuai dengan format HTML
+  if (maxDd < 10) {
+      maxDd = '0' + maxDd;
+  }
+  if (maxMm < 10) {
+      maxMm = '0' + maxMm;
+  }
+
+  // Tanggal maksimum dalam format YYYY-MM-DD
+  var maxDateString = maxYyyy + '-' + maxMm + '-' + maxDd;
+
+  // Atur nilai min dan max untuk input tanggal
+  dateInput.min = minDate;
+  dateInput.max = maxDateString;
+
   subButton.addEventListener("click", function(x){
     x.preventDefault()
 
