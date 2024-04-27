@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(isValid){
       if(totalNum < 10 || totalNum > 50){
-        error.textContent = "The number of attendees is insufficient (1-50)"
+        error.textContent = "The number of attendees is insufficient (10-50)"
         error.style.color = "red"
         error.style.display = "block"
         isValid = false
