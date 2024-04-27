@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const purpose = document.getElementById('des').value
     const start = document.getElementById('start-time').value
     const end = document.getElementById('end-time').value
-
+    const kitchenToggle = document.querySelector(".kitchen-dropdown-toggle"); 
     const toggle = document.getElementById("dropdown-toggle")
 
     const nameRegex = /^[a-zA-Z\s]*$/
@@ -222,6 +222,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector('.dropdown-text').textContent = "Select your class"
       document.querySelector('.kitchen-dropdown-text').textContent = "Kitchen Appliance"
       toggle.style.backgroundColor = "white"
+      kitchenToggle.style.backgroundColor = "white"
       error.textContent = "Your booking request has been recorded"
       error.style.color = "#0060AF"
       error.style.display = "block"
