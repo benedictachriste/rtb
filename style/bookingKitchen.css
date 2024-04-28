@@ -519,6 +519,7 @@ form > div:last-of-type {
 }
 
 #error{
+    font-family: "Poppins", sans-serif;
     font-size: 15px;
     color: red;
     margin-top: 0;
