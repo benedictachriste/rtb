@@ -13,19 +13,103 @@ border dkk pake px
 
 body{
     font-family: "Poppins", sans-serif;  
-    background: url("../img/bg_logo.png"), linear-gradient(#FCFFFF ,#DFEDF5);
+    background: url("/img/bg_logo.png"), linear-gradient(#FCFFFF ,#DFEDF5);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-attachment: scroll;
     
 }
 
+/*
 .navbar{
     margin: 4.438rem 5.5rem 0rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+} */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 5.5vw;
+    /* justify-content: space-evenly; */
+    /* background-color: #EEF7FC; */
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin-left: 0vw;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.home{
+    width: 3vw;
+}
+
+.menu-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-around;
+    margin-right: 0vw;
+}
+
+.menu a {
+    font-size: 1.4vw;
+    text-decoration: none;
+    color: #0060AF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/*tambahan*/
+.menu a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: #0060AF;
+    transition: text-decoration 0.3s ease;
+}
+
+.menu p{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #EEF7FC;
+    opacity: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.logo-BCA {
+    width: 15vw;
+    height: auto;
+}
+
+.notif-icon{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.notif-icon img{
+    width: 2vw;
+    height: auto;
+    display: none;
 }
 
 .form-container{
@@ -34,7 +118,7 @@ body{
     /* width: 33%; */
     width: 33vw;
     gap: 2rem;
-    margin-top: 7.206rem;
+    margin-top: 13rem;
 }
 
 .main{

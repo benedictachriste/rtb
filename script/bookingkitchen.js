@@ -57,9 +57,13 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("click", function(event) {
         if (!toggle.contains(event.target)) {
             document.getElementById("dropdown-options").style.display = "none";
+            // toggleText.style.color = "#93969A";
+            // toggle.style.backgroundColor = "#FAFAFC";
         }
         if (!kitchenToggle.contains(event.target)) {
             document.getElementById("kitchen-dropdown-options").style.display = "none";
+            // kitchenToggleText.style.color = "#93969A";
+            // kitchenToggle.style.backgroundColor = "#FAFAFC";
         }
     });
 });
@@ -117,7 +121,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const start = document.getElementById('start-time').value
     const end = document.getElementById('end-time').value
     const kitchenToggle = document.querySelector(".kitchen-dropdown-toggle"); 
-    const toggle = document.getElementById("dropdown-toggle")
+    const toggle = document.getElementById("dropdown-toggle");
+    const toggleText = document.querySelector(".dropdown-text");
+    const kitchenToggleText = document.querySelector(".kitchen-dropdown-text");
 
     const nameRegex = /^[a-zA-Z\s]*$/
 
@@ -223,6 +229,8 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector('.kitchen-dropdown-text').textContent = "Kitchen Appliance"
       toggle.style.backgroundColor = "white"
       kitchenToggle.style.backgroundColor = "white"
+      toggleText.style.color = "#93969A";
+      kitchenToggleText.style.color = "#93969A";
       error.textContent = "Your booking request has been recorded"
       error.style.color = "#0060AF"
       error.style.display = "block"

@@ -75,6 +75,19 @@
   height: auto;
 }
 
+.mark{
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-top: 2vw !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  align-self: center;
+  justify-content: end;
+  list-style-type: none;
+}
+
 /*Hamburger Menu*/
 .hamburger-menu{
   display: none;
