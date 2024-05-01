@@ -13,94 +13,6 @@ body{
     background-repeat: no-repeat;
     justify-content: space-between;
 }
-/*
-.menu img{
-    width: 2vw;
-    height: auto;
-}
-
- .slide-menu {
-    z-index: 1;
-    font-family: "Poppins", sans-serif;
-    border-radius: 0 0 0 2vw;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    top: 5vw;
-    right: -25vw; 
-    to hid the slide menu
-    width: 25vw;
-    height: 30vw; 
-    background-color: #DFEDF5;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease-in-out;
-    overflow-y: auto; 
-    to enable scroll
-  } 
-  
-  
-  .menuwrapper{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-top: 1vw;
-    color: #0060AF;
-    font-weight: 600;
-    font-size: 0.65em;
-  }
-  
-  .menuwrapper h2{
-    font-size: 2.2vw;
-    margin-top: 1vw;
-    margin-bottom: 0.7vw;
-  }
-  
-  .slide-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
-  .slide-menu ul li {
-    padding-top: 1vw;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-    padding-bottom: 1vw;
-    display: flex;
-  }
-
-  .slide-menu li{
-    align-items: center;
-  }
-  
-  .slide-menu ul li img {
-    width: 3vw;
-    height: 3vw;
-    margin-right: 1vw;
-  }
-  
-  .notification-content {
-    flex: 1;
-    font-size: 1.25em;
-  }
-
-  .notification-content p{
-    margin: 0 auto;
-  }
-  
-  .notification-date {
-    font-size: 	0.9375em;
-    font-style: italic;
-    font-weight: 400;
-  }
-  
-  .notifdivider{
-    width: 100%;
-    border-color: #0060AF;
-  }  */
 
 .wrapper{
     display: flex;
@@ -114,10 +26,8 @@ body{
 }
 
 .title-page{
-    width: 50vw;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -136,38 +46,64 @@ body{
 }
 
 .ellipse{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: 'outfit', sans-serif;
 }
 
 .container-ellipse{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40.97222vw;
-  height: 40.97222vw;
+  width: 39.97222vw;
+  height: 39.97222vw;
   position: absolute;
   top: 6vw;
   left: 8vw;
-
+  border-radius: 50%;
+  background-image: radial-gradient( #fff ,#DFEDF5 50%);
 }
 
+.container-ellipse:hover{
+  background-image: radial-gradient( #fff ,#cae3f1 70%);
+  box-shadow: 2px 2px 3px rgba(151, 151, 151, 0.4);
+
+  h1{
+    text-shadow: 0px 3px 3px rgba(58, 57, 57, 0.5);
+  }
+}
+
+
 .container-ellipse img{
-    width: 40.97222vw;
-    height: 40.97222vw;
+    width: 39.97222vw;
+    height: 39.97222vw;
     width: 100%;
 }
 
+.container-ellipse .container-name{
+  position: absolute;
+  top: 15vw;
+  left: 11vw;
+}
+
+.container-ellipse2 .container-name{
+  position: absolute;
+  top: 15.2vw;
+  left: 11.8vw;
+}
+
+.container-ellipse3 .container-name{
+  position: absolute;
+  top: 13.8vw;
+  left: 11.7vw;
+}
+
 .container-name{
-    position: absolute;
-    width: 5vw;
+    width: 18vw;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    
 }
 
 .container-name h1{
@@ -187,7 +123,19 @@ body{
     position: absolute;
     top: 35vw;
     left: 52vw;
+    border-radius: 50%;
+    background-image: radial-gradient( #fff ,#DFEDF5 50%);
 }
+
+.container-ellipse2:hover{
+  background-image: radial-gradient( #fff ,#cae3f1 70%);
+  box-shadow: 2px 2px 3px rgba(151, 151, 151, 0.4);
+
+  h1{
+    text-shadow: 0px 3px 3px rgba(58, 57, 57, 0.5);
+  }
+}
+
 
 .container-ellipse2 img{
   width: 40.97222vw;
@@ -199,16 +147,27 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40.97222vw;
-    height: 40.97222vw;
+    width: 41.97222vw;
+    height: 41.97222vw;
     position: absolute;
     top: 65vw;
     left: 9vw;
+    border-radius: 50%;
+    background-image: radial-gradient( #fff ,#DFEDF5 50%);
+}
+
+.container-ellipse3:hover{
+  background-image: radial-gradient( #fff ,#cae3f1 70%);
+  box-shadow: 2px 2px 3px rgba(151, 151, 151, 0.4);
+
+  h1{
+    text-shadow: 0px 3px 3px rgba(58, 57, 57, 0.5);
+  }
 }
 
 .container-ellipse3 img{
-  width: 40.97222vw;
-  height: 40.97222vw;
+  width: 41.97222vw;
+  height: 41.97222vw;
   width: 100%;
 }
 
