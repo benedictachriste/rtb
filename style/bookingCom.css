@@ -274,11 +274,11 @@ a{
 }
 
 .calender-date p:first-of-type{
-    font-size: 2.7vw;
+    font-size: 2.5vw;
 }
 
 .calender-date p:nth-of-type(2){
-    font-size: 2vw;
+    font-size: 1.65vw;
 }
 
 .detail-container{
@@ -539,7 +539,7 @@ form > div:last-of-type {
     }
 
     .calender-content{
-        width: 85%;
+        width: 90%;
         height: 100%;
         display: flex;
         flex-direction: column;
