@@ -22,6 +22,23 @@ function closepopup(){
     document.querySelector("body").classList.remove("body-no-scroll")
 }
 
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(function(card) {
+    card.addEventListener("mouseover", function() {
+        const pTag = card.querySelector(".booknowbutt p");
+        pTag.style.color = "#0060AF";
+      });
+      
+      card.addEventListener("mouseout", function() {
+        const pTag = card.querySelector(".booknowbutt p");
+        pTag.style.color = "black";
+    });
+});
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
   const toggle = document.getElementById("dropdown-toggle")
