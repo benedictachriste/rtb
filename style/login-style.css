@@ -320,7 +320,7 @@ body{
     .login-button{
         font-size: 1.15em;
     }
-    .wa img{
+    .img-contact{
         height: 70px;
     }
 
@@ -416,7 +416,7 @@ body{
     .footer{
         font-size: 0.5em;
     }
-    .wa img{
+    .img-contact{
         height: 50px;
     }
 }
