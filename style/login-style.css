@@ -244,14 +244,11 @@ body{
     text-align: center;
 }
 
-.wa img {
+.img-contact {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 85px;
-}
-
-.img-contact{
     margin-bottom: 1.063rem;
 }
 
