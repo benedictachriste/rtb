@@ -97,13 +97,13 @@ a {
     font-family: "Outfit", sans-serif;
     text-align: justify;
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 1.6vw;
 }
 
 .map-wrap {
     width: 100vw;
     height: 0vw;
-    padding-top: 15vw;
+    padding-top: 16vw;
 }
 
 .map-wrap a{
@@ -202,7 +202,7 @@ a {
 .article1{
     width: 25vw;
     height: 17vw;
-    border-radius: 24px;
+    border-radius: 16px;
     background-color: #F2F2F2;
     padding: 1.5vw;
     flex-direction: column;
@@ -213,7 +213,7 @@ a {
 .article2{
     width: 25vw;
     height: 17vw;
-    border-radius: 24px;
+    border-radius: 16px;
     background-color: #F2F2F2;
     padding: 1.5vw;
     flex-direction: column;
@@ -224,7 +224,7 @@ a {
 .photo{
     width: 25vw;
     height: 13vw;
-    border-radius: 16px;
+    border-radius: 12px;
     object-fit: cover;
     clip-path: inset(0,0);
 }
@@ -280,7 +280,7 @@ a {
     font-family: "Outfit", sans-serif;
     text-align: justify;
     font-weight: 500;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     line-height: 1.5;
     margin-right: 7vw;
 }
@@ -303,6 +303,10 @@ a {
     font-weight: 700;
 }
 
+.program{
+    height: fit-content;
+}
+
 .ppbp{
     margin-top: 2.5vw;
     display: flex;
@@ -312,7 +316,7 @@ a {
 }
 
 .ppbp img{
-    width: 25vw;
+    width: 20vw;
     height: auto;
 }
 
@@ -322,7 +326,7 @@ a {
     font-family: "Outfit", sans-serif;
     text-align: justify;
     font-weight: 600;
-    font-size: 2.5vw;
+    font-size: 2vw;
     line-height: 1.5;
     color: #0060AF;
 }
@@ -332,10 +336,13 @@ a {
     align-items: center;
     justify-content: center;
     width: fit-content;
+    padding: 0.5vw;
+    position: relative;
+    top: -3.5vw;
 }
 
 .ppti img{
-    width: 25vw;
+    width: 20vw;
     height: auto;
     margin-right: 5vw;
 }
@@ -345,7 +352,7 @@ a {
     font-family: "Outfit", sans-serif;
     text-align: justify;
     font-weight: 600;
-    font-size: 2.5vw;
+    font-size: 2vw;
     line-height: 1.5;
     color: #0060AF;
 }
@@ -368,7 +375,27 @@ a {
     width: 5vw;
 }
 
+/*mobile app copy navbar responsive*/
+@media screen and (max-width:644px){
+    .maps{
+        width: 65%;
+        margin-bottom: 2vw;
+    }
+
+    .dormitory-supervisor {
+        margin-top: 17vw;
+    }
+
+    .about p{
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width:576px){
+    .home{
+        width: 4vw;
+    }
+
     .maps{
         border-radius: 20px;
     }
@@ -387,6 +414,87 @@ a {
 
     .photo{
         border-radius: 8px;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .about p{
+        font-size: 9.5px;
+        padding-bottom: 8vw;
+    }
+
+    .divide p{
+        padding-top: 2vw;
+    }
+
+    .join{
+        height: 20vh;
+    }
+
+    .ppbp img{
+        width: 15vw;
+    }
+
+    .ppbp h3{
+        font-size: 9px;
+    }
+
+    .ppti img{
+        width:15vw;
+    }
+
+    .ppti h3{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:420px){
+    .join{
+        height: fit-content;
+    }
+
+    .divide p{
+        padding-top: 1vw;
+        font-size: 7px;
+    }
+
+    .about p{
+        font-size: 8px;
+        padding-bottom: 8vw;
+    }
+
+    .dormitory-supervisor{
+        margin-top: 16vw;
+    }
+
+    .dormitory-supervisor h2{
+        font-size: 10px;
+    }
+
+    .join{
+        height: max-content;
+    }
+
+    .ppti{
+        top: -1vw;
+    }
+
+    .ppbp img{
+        width: 12vw;
+    }
+
+    .ppbp h3{
+        font-size: 6.5px;
+    }
+
+    .ppti img{
+        width:12vw;
+    }
+
+    .ppti h3{
+        font-size: 6.5px;
     }
 }
 
@@ -413,5 +521,23 @@ a {
 
     .wrap-structure{
         padding-bottom: 3vh;
+    }
+
+    .dormitory-supervisor{
+        margin-top: 18vw;
+    }
+
+    .divide p{
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width: 310px){
+    .hamburger-menu input:checked ~ span:nth-child(2){
+        transform: rotate(45deg) translate(1vw, -0.9vw);
+    }
+    
+    .hamburger-menu input:checked ~ span:nth-child(4){
+        transform: rotate(-45deg) translate(0.5vw, 0.6vw);
     }
 }
