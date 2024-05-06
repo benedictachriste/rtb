@@ -92,41 +92,49 @@ body {
 }
 
 .card button{
-    z-index : 1;
+    position: absolute;
+    z-index : -1;
     border-radius: 25px;
     background-color: white;
     border: none;   
     width: 130px;
     height: 32px;
     margin-top: -50px;
+    top : 100%;
 }
 
 
 
 .name p{
     position: absolute;
-    top: 18vh;
-    left: 2vw;
+    top: 50%;
+    left: 5%;
+    z-index : 2;
 }
 
 
 
 .buttonWrap {
+    margin-top: 8px;
     position : absolute;
+    top : 75%;
+    left: 10%;
 }
 
 .booknowbutt {
+    display : flex;
+    justify-content: center;
     position : absolute;
-    top : 27vh;
-    left : 2vw;
+    top: 50%;
+    left: 5%;
 }
 
 .booknowbutt p{
-    position : absolute;
-    left : 20px;
-    bottom: -85px;
+    /* position : absolute; */
+    /* left : 20px;
+    bottom: -85px; */
     width : 100px;
-    height : 100px;    
+    height : auto;    
     color: black;
     font-weight: 600;
     text-shadow: none;
