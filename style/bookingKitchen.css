@@ -274,15 +274,15 @@ a{
 }
 
 .calender-date p:first-of-type{
-    font-size: 2.7vw;
+    font-size: 2.5vw;
 }
  
 .calender-date p:nth-of-type(2){
-    font-size: 2vw;
+    font-size: 1.65vw;
 }
 
 .detail-container{
-    width: 80%;
+    width: 90%;
     height: 65%;
     display: flex;
     flex-direction: column;
@@ -290,7 +290,7 @@ a{
 }
 
 .calender-details .tutor{
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-weight: 700;
     margin-top: 0.7vw;
 }

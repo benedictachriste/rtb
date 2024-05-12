@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if(isValid){
-      if(totalNum < 10){
+      if(totalNum < 15 || totalNum > 30){
         error.textContent = "The number of attendees does not meet the minimum requirements (10)"
         error.style.color = "red"
         error.style.display = "block"
